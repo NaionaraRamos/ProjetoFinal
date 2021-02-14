@@ -34,9 +34,12 @@ namespace InstaGama.Application.AppPostage
         {
             var userId = _logged.GetUserLoggedId();
 
-            var postage = new Postage(input.Text, userId);
+            var postage = new Postage(input.Text, input.Image, input.Video, userId);
 
-            //Validar classe com dados obrigatorios..
+            if (!postage.IsValid())
+            {
+                throw new ArgumentException("Existem dados que são obrigatórios e não foram preenchidos");
+            }
 
             var id = await _postageRepository
                              .InsertAsync(postage)
@@ -45,6 +48,17 @@ namespace InstaGama.Application.AppPostage
             postage.SetId(id);
 
             return postage;
+        }
+
+        public async Task<List<string>> GetGalleryByUserIdAsync(int id)
+        {
+            var userId = _logged.GetUserLoggedId();
+
+            var gallery = await _postageRepository
+                                    .GetGalleryByUserIdAsync(userId)
+                                    .ConfigureAwait(false);
+
+            return gallery;
         }
     }
 }

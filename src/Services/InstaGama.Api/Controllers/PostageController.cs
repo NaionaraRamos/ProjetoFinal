@@ -14,9 +14,10 @@ namespace InstaGama.Api.Controllers
     [ApiController]
     public class PostageController : ControllerBase
     {
-        private readonly IPostageAppService _postageAppService;
         private readonly ICommentAppService _commentAppService;
         private readonly ILikesAppService _likesAppService;
+        private readonly IPostageAppService _postageAppService;
+
         public PostageController(IPostageAppService postageAppService,
                                   ICommentAppService commentAppService,
                                   ILikesAppService likesAppService)
@@ -123,6 +124,25 @@ namespace InstaGama.Api.Controllers
                                         .ConfigureAwait(false);
 
                 return Ok(quantity);
+            }
+            catch (ArgumentException arg)
+            {
+                return BadRequest(arg.Message);
+            }
+        }
+
+        [Authorize]
+        [HttpGet]
+        [Route("{id}/Gallery")]
+        public async Task<IActionResult> GetGallery([FromRoute] int id)
+        {
+            try
+            {
+                var gallery = await _postageAppService
+                                        .GetGalleryByUserIdAsync(id)
+                                        .ConfigureAwait(false);
+
+                return Ok(gallery);
             }
             catch (ArgumentException arg)
             {

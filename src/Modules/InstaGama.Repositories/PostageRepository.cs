@@ -26,10 +26,9 @@ namespace InstaGama.Repositories
                 var sqlCmd = @$"SELECT Id,
 	                                   UsuarioId,
                                        Texto,
-                                       Foto,
-                                       video,
-                                       Criacao,
-                                       
+                                       Imagem, 
+                                       Video,
+                                       Criacao
                                 FROM 
 	                                Postagem
                                 WHERE 
@@ -50,12 +49,13 @@ namespace InstaGama.Repositories
                     {
                         var postage = new Postage(int.Parse(reader["Id"].ToString()),
                                                     reader["Texto"].ToString(),
-                                                    reader["Foto"].ToString(),
+                                                    reader["Imagem"].ToString(),
                                                     reader["Video"].ToString(),
                                                     int.Parse(reader["UsuarioId"].ToString()),
                                                     DateTime.Parse(reader["Criacao"].ToString()));
 
                         postagesForUser.Add(postage);
+
                     }
 
                     return postagesForUser;
@@ -69,13 +69,13 @@ namespace InstaGama.Repositories
             {
                 var sqlCmd = @"INSERT INTO
                                 Postagem (UsuarioId,
-                                           Texto,
-                                           Foto,
-                                           Video,
-                                           Criacao)
+                                          Texto,
+                                          Imagem,
+                                          Video
+                                          Criacao)
                                 VALUES (@usuarioId,
                                         @texto,
-                                        @foto,
+                                        @imagem,
                                         @video,
                                         @criacao); SELECT scope_identity();";
 
@@ -85,8 +85,8 @@ namespace InstaGama.Repositories
 
                     cmd.Parameters.AddWithValue("usuarioId", postage.UserId);
                     cmd.Parameters.AddWithValue("texto", postage.Text);
-                    cmd.Parameters.AddWithValue("foto", postage.Text);
-                    cmd.Parameters.AddWithValue("video", postage.Text);
+                    cmd.Parameters.AddWithValue("imagem", postage.Image);
+                    cmd.Parameters.AddWithValue("video", postage.Video);
                     cmd.Parameters.AddWithValue("criacao", postage.Created);
 
                     con.Open();
@@ -95,6 +95,42 @@ namespace InstaGama.Repositories
                                     .ConfigureAwait(false);
 
                     return int.Parse(id.ToString());
+                }
+            }
+        }
+
+        public async Task<List<string>> GetGalleryByUserIdAsync(int userId)
+        {
+            using (var con = new SqlConnection(_configuration["ConnectionString"]))
+            {
+
+                //verificar se a query está certa
+                var sqlCmd = @$"SELECT Imagem
+                                FROM 
+	                                Postagem
+                                WHERE 
+	                                UsuarioId= '{userId}'
+                                    AND Imagem  IS NOT NULL";
+
+                using (var cmd = new SqlCommand(sqlCmd, con))
+                {
+                    cmd.CommandType = CommandType.Text;
+                    con.Open();
+
+                    var reader = await cmd
+                                        .ExecuteReaderAsync()
+                                        .ConfigureAwait(false);
+
+                    var GalleryForUser = new List<string>();
+
+                    while (reader.Read())
+                    {
+                        var image = reader["Imagem"].ToString();
+
+                        GalleryForUser.Add(image);
+                    }
+
+                    return GalleryForUser;
                 }
             }
         }

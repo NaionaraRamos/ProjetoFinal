@@ -3,8 +3,7 @@
     public class PostageInput
     {
         public string Text { get; set; }
-        public string Photo { get; set; }
+        public string Image { get; set; }
         public string Video { get; set; }
-
     }
 }
