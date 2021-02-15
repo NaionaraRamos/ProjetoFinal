@@ -7109,11 +7109,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Paula\\source\\repos\\ProjetoFinal\\src\\Services\\InstaGama.Api\\InstaGama.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Services\\InstaGama.Api\\InstaGama.Api.csproj",
       "projectName": "InstaGama.Api",
-      "projectPath": "C:\\Users\\Paula\\source\\repos\\ProjetoFinal\\src\\Services\\InstaGama.Api\\InstaGama.Api.csproj",
+      "projectPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Services\\InstaGama.Api\\InstaGama.Api.csproj",
       "packagesPath": "C:\\Users\\Paula\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Paula\\source\\repos\\ProjetoFinal\\src\\Services\\InstaGama.Api\\obj\\",
+      "outputPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Services\\InstaGama.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Paula\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7130,11 +7130,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Paula\\source\\repos\\ProjetoFinal\\src\\Modules\\InstaGama.Application\\InstaGama.Application.csproj": {
-              "projectPath": "C:\\Users\\Paula\\source\\repos\\ProjetoFinal\\src\\Modules\\InstaGama.Application\\InstaGama.Application.csproj"
+            "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Application\\InstaGama.Application.csproj": {
+              "projectPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Application\\InstaGama.Application.csproj"
             },
-            "C:\\Users\\Paula\\source\\repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories.IoC\\InstaGama.Repositories.IoC.csproj": {
-              "projectPath": "C:\\Users\\Paula\\source\\repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories.IoC\\InstaGama.Repositories.IoC.csproj"
+            "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories.IoC\\InstaGama.Repositories.IoC.csproj": {
+              "projectPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories.IoC\\InstaGama.Repositories.IoC.csproj"
             }
           }
         }

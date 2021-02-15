@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ogLTYXEWl2ef1qNODyGZpR+1IQQtgyJ+yYSyqXPG3WIWSXfrmwliPWCPWG5TojcOndd7/O3KDTlRW6B1FI+U7g==",
+  "dgSpecHash": "vThLNBx60Yd3vRKdOnZ7qJGgKOJwCpVtfmfgftnAjT6L1OVJNNjgsRHVB1wj2Gp+G8M+KgdPlxB2MSkdOMhIdg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Paula\\source\\repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories.IoC\\InstaGama.Repositories.IoC.csproj",
+  "projectFilePath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories.IoC\\InstaGama.Repositories.IoC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Paula\\.nuget\\packages\\microsoft.aspnetcore.http\\2.2.2\\microsoft.aspnetcore.http.2.2.2.nupkg.sha512",
     "C:\\Users\\Paula\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
