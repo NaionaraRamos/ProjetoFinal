@@ -22,5 +22,10 @@ namespace InstaGama.Domain.Entities
         public int UserId { get; private set; }
         public int FriendId { get; private set; }
 
+        public void SetId(int id)
+        {
+            Id = id;
+        }
+
     }
 }

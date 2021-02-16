@@ -30,24 +30,19 @@ namespace InstaGama.Application.AppRelationships
             return relationships;
         }
 
-        public Task<Relationships> InsertAsync(RelationshipsInput input)
+        public async Task<Relationships> InsertAsync(RelationshipsInput input)
         {
             var userId = _logged.GetUserLoggedId();
 
             var relationship = new Relationships(userId, input.FriendId);
 
-            if (!relationship.IsValid())
-            {
-                throw new ArgumentException("Existem dados que são obrigatórios e não foram preenchidos");
-            }
-
-            var id = await _postageRepository
-                             .InsertAsync(postage)
+            var id = await _relationshipsRepository
+                             .InsertAsync(relationship)
                              .ConfigureAwait(false);
 
-            postage.SetId(id);
+            relationship.SetId(id);
 
-            return postage;
+            return relationship;
         }
     }
 }
