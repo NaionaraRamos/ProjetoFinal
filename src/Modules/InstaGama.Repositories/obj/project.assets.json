@@ -606,19 +606,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anaca\\.nuget\\packages\\": {}
+    "C:\\Users\\Paula\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anaca\\OneDrive\\Área de Trabalho\\projetofinal\\ProjetoFinalGama\\src\\Modules\\InstaGama.Repositories\\InstaGama.Repositories.csproj",
+      "projectUniqueName": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories\\InstaGama.Repositories.csproj",
       "projectName": "InstaGama.Repositories",
-      "projectPath": "C:\\Users\\anaca\\OneDrive\\Área de Trabalho\\projetofinal\\ProjetoFinalGama\\src\\Modules\\InstaGama.Repositories\\InstaGama.Repositories.csproj",
-      "packagesPath": "C:\\Users\\anaca\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anaca\\OneDrive\\Área de Trabalho\\projetofinal\\ProjetoFinalGama\\src\\Modules\\InstaGama.Repositories\\obj\\",
+      "projectPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories\\InstaGama.Repositories.csproj",
+      "packagesPath": "C:\\Users\\Paula\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\anaca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Paula\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -632,8 +632,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\anaca\\OneDrive\\Área de Trabalho\\projetofinal\\ProjetoFinalGama\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj": {
-              "projectPath": "C:\\Users\\anaca\\OneDrive\\Área de Trabalho\\projetofinal\\ProjetoFinalGama\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj"
+            "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj": {
+              "projectPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj"
             }
           }
         }
