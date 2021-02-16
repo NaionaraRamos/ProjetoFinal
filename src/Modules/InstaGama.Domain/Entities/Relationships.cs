@@ -3,6 +3,12 @@ namespace InstaGama.Domain.Entities
 {
     public class Relationships
     {
+        public Relationships(int userId,
+                             int friendId)
+        {
+            UserId = userId;
+            FriendId = friendId;
+        }
         public Relationships(int id, 
                              int userId, 
                              int friendId)
