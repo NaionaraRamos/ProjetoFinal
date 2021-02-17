@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\_test\\InstaGama\\src\\Modules\\InstaGama.Application\\InstaGama.Application.csproj": {}
+    "C:\\Users\\Aline Pereira\\source\\repos\\instagamaNovo\\src\\Modules\\InstaGama.Application\\InstaGama.Application.csproj": {}
   },
   "projects": {
-    "C:\\_test\\InstaGama\\src\\Modules\\InstaGama.Application\\InstaGama.Application.csproj": {
+    "C:\\Users\\Aline Pereira\\source\\repos\\instagamaNovo\\src\\Modules\\InstaGama.Application\\InstaGama.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\_test\\InstaGama\\src\\Modules\\InstaGama.Application\\InstaGama.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Aline Pereira\\source\\repos\\instagamaNovo\\src\\Modules\\InstaGama.Application\\InstaGama.Application.csproj",
         "projectName": "InstaGama.Application",
-        "projectPath": "C:\\_test\\InstaGama\\src\\Modules\\InstaGama.Application\\InstaGama.Application.csproj",
-        "packagesPath": "C:\\Users\\foes\\.nuget\\packages\\",
-        "outputPath": "C:\\_test\\InstaGama\\src\\Modules\\InstaGama.Application\\obj\\",
+        "projectPath": "C:\\Users\\Aline Pereira\\source\\repos\\instagamaNovo\\src\\Modules\\InstaGama.Application\\InstaGama.Application.csproj",
+        "packagesPath": "C:\\Users\\Aline Pereira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aline Pereira\\source\\repos\\instagamaNovo\\src\\Modules\\InstaGama.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\foes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aline Pereira\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\_test\\InstaGama\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj": {
-                "projectPath": "C:\\_test\\InstaGama\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj"
+              "C:\\Users\\Aline Pereira\\source\\repos\\instagamaNovo\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj": {
+                "projectPath": "C:\\Users\\Aline Pereira\\source\\repos\\instagamaNovo\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj"
               }
             }
           }
@@ -58,21 +58,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\_test\\InstaGama\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj": {
+    "C:\\Users\\Aline Pereira\\source\\repos\\instagamaNovo\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\_test\\InstaGama\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Aline Pereira\\source\\repos\\instagamaNovo\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj",
         "projectName": "InstaGama.Domain",
-        "projectPath": "C:\\_test\\InstaGama\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj",
-        "packagesPath": "C:\\Users\\foes\\.nuget\\packages\\",
-        "outputPath": "C:\\_test\\InstaGama\\src\\Modules\\InstaGama.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Aline Pereira\\source\\repos\\instagamaNovo\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj",
+        "packagesPath": "C:\\Users\\Aline Pereira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aline Pereira\\source\\repos\\instagamaNovo\\src\\Modules\\InstaGama.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\foes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aline Pereira\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -126,7 +126,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

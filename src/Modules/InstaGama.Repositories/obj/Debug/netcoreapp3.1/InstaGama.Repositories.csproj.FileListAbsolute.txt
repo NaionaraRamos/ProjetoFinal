@@ -10,3 +10,15 @@ C:\_test\InstaGama\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\In
 C:\_test\InstaGama\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.csproj.CopyComplete
 C:\_test\InstaGama\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.dll
 C:\_test\InstaGama\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.pdb
+C:\Users\Aline Pereira\Source\Repos\instagamaNovo\src\Modules\InstaGama.Repositories\bin\Debug\netcoreapp3.1\InstaGama.Repositories.deps.json
+C:\Users\Aline Pereira\Source\Repos\instagamaNovo\src\Modules\InstaGama.Repositories\bin\Debug\netcoreapp3.1\InstaGama.Repositories.dll
+C:\Users\Aline Pereira\Source\Repos\instagamaNovo\src\Modules\InstaGama.Repositories\bin\Debug\netcoreapp3.1\InstaGama.Repositories.pdb
+C:\Users\Aline Pereira\Source\Repos\instagamaNovo\src\Modules\InstaGama.Repositories\bin\Debug\netcoreapp3.1\InstaGama.Domain.dll
+C:\Users\Aline Pereira\Source\Repos\instagamaNovo\src\Modules\InstaGama.Repositories\bin\Debug\netcoreapp3.1\InstaGama.Domain.pdb
+C:\Users\Aline Pereira\Source\Repos\instagamaNovo\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.csprojAssemblyReference.cache
+C:\Users\Aline Pereira\Source\Repos\instagamaNovo\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.AssemblyInfoInputs.cache
+C:\Users\Aline Pereira\Source\Repos\instagamaNovo\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.AssemblyInfo.cs
+C:\Users\Aline Pereira\Source\Repos\instagamaNovo\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\Aline Pereira\Source\Repos\instagamaNovo\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.csproj.CopyComplete
+C:\Users\Aline Pereira\Source\Repos\instagamaNovo\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.dll
+C:\Users\Aline Pereira\Source\Repos\instagamaNovo\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.pdb
