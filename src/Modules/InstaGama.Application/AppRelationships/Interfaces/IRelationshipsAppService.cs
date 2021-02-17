@@ -8,6 +8,6 @@ namespace InstaGama.Application.AppRelationships.Interfaces
     public interface IRelationshipsAppService
     {
         Task<Relationships> InsertAsync(RelationshipsInput input);
-        Task<List<int>> GetRelationshipsByUserIdAsync();
+        Task<List<Relationships>> GetRelationshipsByUserIdAsync();
     }
 }

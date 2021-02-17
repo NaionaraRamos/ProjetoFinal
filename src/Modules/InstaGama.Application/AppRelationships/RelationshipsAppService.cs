@@ -20,7 +20,7 @@ namespace InstaGama.Application.AppRelationships
             _logged = logged;
         }
 
-        public async Task<List<int>> GetRelationshipsByUserIdAsync()
+        public async Task<List<Relationships>> GetRelationshipsByUserIdAsync()
         {
             var userId = _logged.GetUserLoggedId();
 

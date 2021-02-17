@@ -26,7 +26,7 @@ namespace InstaGama.Repositories
                 var sqlCmd = @$"SELECT Id,
 	                                   UsuarioId,
                                        Texto,
-                                       Imagem, 
+                                       Foto, 
                                        Video,
                                        Criacao
                                 FROM 
@@ -49,7 +49,7 @@ namespace InstaGama.Repositories
                     {
                         var postage = new Postage(int.Parse(reader["Id"].ToString()),
                                                     reader["Texto"].ToString(),
-                                                    reader["Imagem"].ToString(),
+                                                    reader["Foto"].ToString(),
                                                     reader["Video"].ToString(),
                                                     int.Parse(reader["UsuarioId"].ToString()),
                                                     DateTime.Parse(reader["Criacao"].ToString()));
@@ -70,12 +70,12 @@ namespace InstaGama.Repositories
                 var sqlCmd = @"INSERT INTO
                                 Postagem (UsuarioId,
                                           Texto,
-                                          Imagem,
+                                          Foto,
                                           Video
                                           Criacao)
                                 VALUES (@usuarioId,
                                         @texto,
-                                        @imagem,
+                                        @Foto,
                                         @video,
                                         @criacao); SELECT scope_identity();";
 
@@ -85,7 +85,7 @@ namespace InstaGama.Repositories
 
                     cmd.Parameters.AddWithValue("usuarioId", postage.UserId);
                     cmd.Parameters.AddWithValue("texto", postage.Text);
-                    cmd.Parameters.AddWithValue("imagem", postage.Image);
+                    cmd.Parameters.AddWithValue("foto", postage.Photo);
                     cmd.Parameters.AddWithValue("video", postage.Video);
                     cmd.Parameters.AddWithValue("criacao", postage.Created);
 
@@ -105,12 +105,12 @@ namespace InstaGama.Repositories
             {
 
                 //verificar se a query está certa
-                var sqlCmd = @$"SELECT Imagem
+                var sqlCmd = @$"SELECT Foto
                                 FROM 
 	                                Postagem
                                 WHERE 
 	                                UsuarioId= '{userId}'
-                                    AND Imagem  IS NOT NULL";
+                                    AND Foto  IS NOT NULL";
 
                 using (var cmd = new SqlCommand(sqlCmd, con))
                 {
@@ -125,7 +125,7 @@ namespace InstaGama.Repositories
 
                     while (reader.Read())
                     {
-                        var image = reader["Imagem"].ToString();
+                        var image = reader["Foto"].ToString();
 
                         GalleryForUser.Add(image);
                     }
