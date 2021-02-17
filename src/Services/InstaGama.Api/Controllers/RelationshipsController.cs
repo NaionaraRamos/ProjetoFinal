@@ -20,7 +20,7 @@ namespace InstaGama.Api.Controllers
 
         [Authorize]
         [HttpPost]
-        [Route("Follow/{id}")]
+        [Route("Follow/{friendId}")]
         public async Task<IActionResult> Post([FromRoute] RelationshipsInput relationshipsInput)
         {
             try

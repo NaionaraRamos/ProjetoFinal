@@ -60,8 +60,8 @@ namespace InstaGama.Repositories
             using (var con = new SqlConnection(_configuration["ConnectionString"]))
             {
                 var sqlCmd = @"INSERT INTO
-                                Relationships (UsuarioId,
-                                               AmigoID)
+                                Relacionamentos (UsuarioId,
+                                                 AmigoID)
                                 VALUES (@usuarioId,
                                         @amigoId); SELECT scope_identity();";
 
