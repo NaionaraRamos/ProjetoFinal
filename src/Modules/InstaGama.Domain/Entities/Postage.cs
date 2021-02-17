@@ -11,7 +11,8 @@ namespace InstaGama.Domain.Entities
         {
             Text = text;
             UserId = userId;
-
+            Image = image;
+            Video = video;
             Created = DateTime.Now;
         }
 

@@ -7,6 +7,6 @@ namespace InstaGama.Domain.Interfaces
     public interface IRelationshipsRepository
     {
         Task<int> InsertAsync(Relationships relationship);
-        Task<List<int>> GetRelationshipsByUserIdAsync(int userId);
+        Task<List<Relationships>> GetRelationshipsByUserIdAsync(int userId);
     }
 }

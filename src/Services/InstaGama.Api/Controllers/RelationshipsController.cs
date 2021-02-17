@@ -39,8 +39,8 @@ namespace InstaGama.Api.Controllers
 
         [Authorize]
         [HttpGet]
-        [Route("{id}/Following")]
-        public async Task<IActionResult> GetFollowing([FromRoute] int id)
+        [Route("Following")]
+        public async Task<IActionResult> GetFollowing()
         {
             try
             {
