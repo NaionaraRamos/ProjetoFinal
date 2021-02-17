@@ -5,15 +5,14 @@ namespace InstaGama.Domain.Entities
     public class Postage
     {
         public Postage(string text,
-                        string photo,
-                        string video,
-                        int userId)
+                       string photo,
+                       string video,
+                       int userId)
         {
             Text = text;
             UserId = userId;
             Photo = photo;
             Video = video;
-
             Created = DateTime.Now;
         }
 
@@ -26,10 +25,10 @@ namespace InstaGama.Domain.Entities
         {
             Id = id;
             Text = text;
-            UserId = userId;
-            Created = created;
             Photo = photo;
             Video = video;
+            UserId = userId;
+            Created = created;
         }
 
         public int Id { get; private set; }
@@ -39,31 +38,27 @@ namespace InstaGama.Domain.Entities
         public string Video { get; private set; }
         public DateTime Created { get; private set; }
 
+        public bool IsValid()
+        {
+            bool valid = true;
+
+
+            if (string.IsNullOrEmpty(Text) && string.IsNullOrEmpty(Photo) && string.IsNullOrEmpty(Video))
+            {
+                valid = false;
+            }
+
+            if (!string.IsNullOrEmpty(Photo) && !string.IsNullOrEmpty(Video))
+            {
+                valid = false;
+            }
+
+            return valid;
+        }
+
         public void SetId(int id)
         {
             Id = id;
-        }
-
-
-        public bool Isvalid()
-        {            
-            
-           bool valid = true;
-
-           if ((string.IsNullOrEmpty(Photo) &&
-               string.IsNullOrEmpty(Video) &&
-               string.IsNullOrEmpty(Text)) || (
-               !string.IsNullOrEmpty(Photo)&& 
-               !string.IsNullOrEmpty(Video)))
-                
-
-           {
-              valid = false;
-           }
-
-                return valid;
-
-            
         }
     }
 }

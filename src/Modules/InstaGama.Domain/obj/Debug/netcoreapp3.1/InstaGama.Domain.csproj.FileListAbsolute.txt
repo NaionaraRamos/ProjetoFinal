@@ -7,3 +7,24 @@ C:\_test\InstaGama\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGam
 C:\_test\InstaGama\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGama.Domain.csproj.CoreCompileInputs.cache
 C:\_test\InstaGama\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGama.Domain.dll
 C:\_test\InstaGama\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGama.Domain.pdb
+<<<<<<< HEAD
+=======
+C:\Users\Paula\source\repos\instagama\src\Modules\InstaGama.Domain\bin\Debug\netcoreapp3.1\InstaGama.Domain.deps.json
+C:\Users\Paula\source\repos\instagama\src\Modules\InstaGama.Domain\bin\Debug\netcoreapp3.1\InstaGama.Domain.dll
+C:\Users\Paula\source\repos\instagama\src\Modules\InstaGama.Domain\bin\Debug\netcoreapp3.1\InstaGama.Domain.pdb
+C:\Users\Paula\source\repos\instagama\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGama.Domain.csprojAssemblyReference.cache
+C:\Users\Paula\source\repos\instagama\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGama.Domain.AssemblyInfoInputs.cache
+C:\Users\Paula\source\repos\instagama\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGama.Domain.AssemblyInfo.cs
+C:\Users\Paula\source\repos\instagama\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGama.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Paula\source\repos\instagama\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGama.Domain.dll
+C:\Users\Paula\source\repos\instagama\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGama.Domain.pdb
+C:\Users\Paula\source\repos\ProjetoFinal\src\Modules\InstaGama.Domain\bin\Debug\netcoreapp3.1\InstaGama.Domain.deps.json
+C:\Users\Paula\source\repos\ProjetoFinal\src\Modules\InstaGama.Domain\bin\Debug\netcoreapp3.1\InstaGama.Domain.dll
+C:\Users\Paula\source\repos\ProjetoFinal\src\Modules\InstaGama.Domain\bin\Debug\netcoreapp3.1\InstaGama.Domain.pdb
+C:\Users\Paula\source\repos\ProjetoFinal\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGama.Domain.csprojAssemblyReference.cache
+C:\Users\Paula\source\repos\ProjetoFinal\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGama.Domain.AssemblyInfoInputs.cache
+C:\Users\Paula\source\repos\ProjetoFinal\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGama.Domain.AssemblyInfo.cs
+C:\Users\Paula\source\repos\ProjetoFinal\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGama.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Paula\source\repos\ProjetoFinal\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGama.Domain.dll
+C:\Users\Paula\source\repos\ProjetoFinal\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGama.Domain.pdb
+>>>>>>> PaulaSalvado

@@ -95,6 +95,7 @@ namespace InstaGama.Repositories
 
                     while(reader.Read())
                     {
+<<<<<<< HEAD
                         var user = new User(reader["Email"].ToString(),
                                             reader["Senha"].ToString(),
                                             reader["Nome"].ToString(),
@@ -102,6 +103,14 @@ namespace InstaGama.Repositories
                                             new Gender(reader["Descricao"].ToString()),
                                             reader["Foto"].ToString());
                         
+=======
+                        var user = new User(reader["Nome"].ToString(),
+                                            DateTime.Parse(reader["DataNascimento"].ToString()),
+                                            new Gender(reader["Descricao"].ToString()),
+                                            reader["Foto"].ToString());
+
+                        user.InformationLoginUser(reader["Email"].ToString(), reader["Senha"].ToString());
+>>>>>>> PaulaSalvado
                         user.SetId(int.Parse(reader["id"].ToString()));
                         user.Gender.SetId(int.Parse(reader["GeneroId"].ToString()));
 

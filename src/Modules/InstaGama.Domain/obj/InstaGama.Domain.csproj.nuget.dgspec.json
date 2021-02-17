@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anaca\\OneDrive\\Área de Trabalho\\projetofinal\\ProjetoFinalGama\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj": {}
+    "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anaca\\OneDrive\\Área de Trabalho\\projetofinal\\ProjetoFinalGama\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj": {
+    "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anaca\\OneDrive\\Área de Trabalho\\projetofinal\\ProjetoFinalGama\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj",
         "projectName": "InstaGama.Domain",
-        "projectPath": "C:\\Users\\anaca\\OneDrive\\Área de Trabalho\\projetofinal\\ProjetoFinalGama\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj",
-        "packagesPath": "C:\\Users\\anaca\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anaca\\OneDrive\\Área de Trabalho\\projetofinal\\ProjetoFinalGama\\src\\Modules\\InstaGama.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj",
+        "packagesPath": "C:\\Users\\Paula\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\anaca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Paula\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,6 +43,17 @@
             "Microsoft.AspNetCore.Http.Abstractions": {
               "target": "Package",
               "version": "[2.2.0, )"
+<<<<<<< HEAD
+=======
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "WindowsAzure.Storage": {
+              "target": "Package",
+              "version": "[9.3.3, )"
+>>>>>>> PaulaSalvado
             }
           },
           "imports": [
