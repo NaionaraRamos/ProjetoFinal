@@ -25,7 +25,7 @@ namespace InstaGama.Repositories
                                        UsuarioId,
                                        AmigoId
                                 FROM 
-	                                Relacionamentos
+	                                Relacionamento
                                 WHERE 
 	                                UsuarioId= '{userId}'";
 
@@ -60,7 +60,7 @@ namespace InstaGama.Repositories
             using (var con = new SqlConnection(_configuration["ConnectionString"]))
             {
                 var sqlCmd = @"INSERT INTO
-                                Relacionamentos (UsuarioId,
+                                Relacionamento (UsuarioId,
                                                  AmigoID)
                                 VALUES (@usuarioId,
                                         @amigoId); SELECT scope_identity();";

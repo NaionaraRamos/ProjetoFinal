@@ -34,7 +34,7 @@ namespace InstaGama.Application.AppRelationships
         {
             var userId = _logged.GetUserLoggedId();
 
-            var relationship = new Relationships(input.FriendId, userId);
+            var relationship = new Relationships(userId, input.FriendId);
 
             var id = await _relationshipsRepository
                              .InsertAsync(relationship)
