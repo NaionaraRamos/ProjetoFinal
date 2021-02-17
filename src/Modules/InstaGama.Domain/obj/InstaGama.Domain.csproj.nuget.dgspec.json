@@ -43,8 +43,6 @@
             "Microsoft.AspNetCore.Http.Abstractions": {
               "target": "Package",
               "version": "[2.2.0, )"
-<<<<<<< HEAD
-=======
             },
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
@@ -53,7 +51,6 @@
             "WindowsAzure.Storage": {
               "target": "Package",
               "version": "[9.3.3, )"
->>>>>>> PaulaSalvado
             }
           },
           "imports": [
