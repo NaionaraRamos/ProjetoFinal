@@ -71,4 +71,13 @@ ALTER TABLE dbo.Curtidas
    ADD CONSTRAINT FK_Curtidas_Postagem FOREIGN KEY (PostagemId)
       REFERENCES dbo.Postagem (Id)
 
+CREATE TABLE dbo.Relacionamento (
+	Id int IDENTITY(1,1) NOT NULL,
+	UsuarioId int NOT NULL,
+	AmigoId int NOT NULL,
+	CONSTRAINT PK_Relacionamento_Id PRIMARY KEY CLUSTERED (Id)
+)
 
+ALTER TABLE dbo.Relacionamento
+   ADD CONSTRAINT FK_Relacionamento_Usuario FOREIGN KEY (UsuarioId)
+       REFERENCES dbo.Usuario (Id)

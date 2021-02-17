@@ -34,7 +34,7 @@ namespace InstaGama.Application.AppPostage
         {
             var userId = _logged.GetUserLoggedId();
 
-            var postage = new Postage(input.Text, input.Image, input.Video, userId);
+            var postage = new Postage(input.Text, input.Photo, input.Video, userId);
 
             if (!postage.IsValid())
             {
