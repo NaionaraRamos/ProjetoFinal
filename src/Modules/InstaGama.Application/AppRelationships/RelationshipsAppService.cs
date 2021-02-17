@@ -20,7 +20,7 @@ namespace InstaGama.Application.AppRelationships
             _logged = logged;
         }
 
-        public async Task<List<int>> GetRelationshipsByUserIdAsync()
+        public async Task<List<Relationships>> GetRelationshipsByUserIdAsync()
         {
             var userId = _logged.GetUserLoggedId();
 
@@ -34,7 +34,7 @@ namespace InstaGama.Application.AppRelationships
         {
             var userId = _logged.GetUserLoggedId();
 
-            var relationship = new Relationships(userId, input.FriendId);
+            var relationship = new Relationships(input.FriendId, userId);
 
             var id = await _relationshipsRepository
                              .InsertAsync(relationship)

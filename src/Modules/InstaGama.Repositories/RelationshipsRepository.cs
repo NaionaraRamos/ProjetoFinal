@@ -1,7 +1,6 @@
 ﻿using InstaGama.Domain.Entities;
 using InstaGama.Domain.Interfaces;
 using Microsoft.Extensions.Configuration;
-using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -18,11 +17,13 @@ namespace InstaGama.Repositories
             _configuration = configuration;
         }
 
-        public async Task<List<int>> GetRelationshipsByUserIdAsync(int userId)
+        public async Task<List<Relationships>> GetRelationshipsByUserIdAsync(int userId)
         {
             using (var con = new SqlConnection(_configuration["ConnectionString"]))
             {
-                var sqlCmd = @$"SELECT AmigoId
+                var sqlCmd = @$"SELECT Id,
+                                       UsuarioId,
+                                       AmigoId
                                 FROM 
 	                                Relacionamentos
                                 WHERE 
@@ -37,11 +38,13 @@ namespace InstaGama.Repositories
                                         .ExecuteReaderAsync()
                                         .ConfigureAwait(false);
 
-                    var relationshipsForUser = new List<int>();
+                    var relationshipsForUser = new List<Relationships>();
 
                     while (reader.Read())
                     {
-                        var relationship = int.Parse(reader["FriendId"].ToString());       
+                        var relationship = new Relationships(int.Parse(reader["Id"].ToString()),
+                                                        int.Parse(reader["UsuarioId"].ToString()),
+                                                        int.Parse(reader["AmigoId"].ToString()));
 
                         relationshipsForUser.Add(relationship);
 
