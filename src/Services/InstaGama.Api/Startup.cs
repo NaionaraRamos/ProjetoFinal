@@ -57,13 +57,13 @@ namespace InstaGama.Api
                 c.SwaggerDoc("v1",
                     new OpenApiInfo
                     {
-                        Title = "InstaGama",
+                        Title = "InstaCademy",
                         Version = "v1",
                         Description = "Api das meninas da Gama",
                         Contact = new OpenApiContact
                         {
-                            Name = "Fernando",
-                            Url = new Uri("https://github.com/marraia")
+                            Name = "Projeto Final- Gama Academy",
+                            Url = new Uri("https://github.com/NaionaraRamos/ProjetoFinal.git")
                         }
                     });
             });
