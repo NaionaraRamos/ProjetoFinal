@@ -1,0 +1,15 @@
+config:
+  target: "http://localhost:53271"
+  phases:
+    - duration: 2
+      arrivalRate: 2
+scenarios:
+- flow:
+        - post:
+            url: "/api/login"
+            json:
+              login: "magali@gmail.com"
+              password: "magali"
+            capture:
+              json: "$.accessToken"
+              as: "accessToken"
