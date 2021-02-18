@@ -12,11 +12,7 @@
           "InstaGama.Domain": "1.0.0",
           "InstaGama.Repositories": "1.0.0",
           "Microsoft.AspNetCore.Http": "2.2.2",
-<<<<<<< HEAD
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.11"
-=======
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.12"
->>>>>>> PaulaSalvado
         },
         "runtime": {
           "InstaGama.Repositories.IoC.dll": {}
@@ -51,11 +47,7 @@
       },
       "Microsoft.AspNetCore.Http.Features/2.2.0": {
         "dependencies": {
-<<<<<<< HEAD
-          "Microsoft.Extensions.Primitives": "3.1.11"
-=======
           "Microsoft.Extensions.Primitives": "3.1.12"
->>>>>>> PaulaSalvado
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
@@ -76,24 +68,6 @@
           }
         }
       },
-<<<<<<< HEAD
-      "Microsoft.Extensions.Configuration.Abstractions/3.1.11": {
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "3.1.11"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll": {
-            "assemblyVersion": "3.1.11.0",
-            "fileVersion": "3.100.1120.56716"
-          }
-        }
-      },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.11": {
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "assemblyVersion": "3.1.11.0",
-            "fileVersion": "3.100.1120.56716"
-=======
       "Microsoft.CSharp/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -130,7 +104,6 @@
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
             "assemblyVersion": "3.1.12.0",
             "fileVersion": "3.100.1221.6909"
->>>>>>> PaulaSalvado
           }
         }
       },
@@ -144,13 +117,8 @@
       },
       "Microsoft.Extensions.Options/2.2.0": {
         "dependencies": {
-<<<<<<< HEAD
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.11",
-          "Microsoft.Extensions.Primitives": "3.1.11",
-=======
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.12",
           "Microsoft.Extensions.Primitives": "3.1.12",
->>>>>>> PaulaSalvado
           "System.ComponentModel.Annotations": "4.5.0"
         },
         "runtime": {
@@ -160,29 +128,17 @@
           }
         }
       },
-<<<<<<< HEAD
-      "Microsoft.Extensions.Primitives/3.1.11": {
-        "runtime": {
-          "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {
-            "assemblyVersion": "3.1.11.0",
-            "fileVersion": "3.100.1120.56716"
-=======
       "Microsoft.Extensions.Primitives/3.1.12": {
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {
             "assemblyVersion": "3.1.12.0",
             "fileVersion": "3.100.1221.6909"
->>>>>>> PaulaSalvado
           }
         }
       },
       "Microsoft.Net.Http.Headers/2.2.0": {
         "dependencies": {
-<<<<<<< HEAD
-          "Microsoft.Extensions.Primitives": "3.1.11",
-=======
           "Microsoft.Extensions.Primitives": "3.1.12",
->>>>>>> PaulaSalvado
           "System.Buffers": "4.5.0"
         },
         "runtime": {
@@ -193,8 +149,6 @@
         }
       },
       "Microsoft.NETCore.Platforms/3.1.0": {},
-<<<<<<< HEAD
-=======
       "Microsoft.NETCore.Targets/1.1.0": {},
       "Microsoft.Win32.Primitives/4.3.0": {
         "dependencies": {
@@ -203,15 +157,12 @@
           "System.Runtime": "4.3.0"
         }
       },
->>>>>>> PaulaSalvado
       "Microsoft.Win32.Registry/4.7.0": {
         "dependencies": {
           "System.Security.AccessControl": "4.7.0",
           "System.Security.Principal.Windows": "4.7.0"
         }
       },
-<<<<<<< HEAD
-=======
       "NETStandard.Library/1.6.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -285,7 +236,6 @@
           "Microsoft.NETCore.Targets": "1.1.0"
         }
       },
->>>>>>> PaulaSalvado
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "dependencies": {
           "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
@@ -293,8 +243,6 @@
           "runtime.win-x86.runtime.native.System.Data.SqlClient.sni": "4.4.0"
         }
       },
-<<<<<<< HEAD
-=======
       "runtime.native.System.IO.Compression/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -334,7 +282,6 @@
       "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
->>>>>>> PaulaSalvado
       "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
         "runtimeTargets": {
           "runtimes/win-arm64/native/sni.dll": {
@@ -362,10 +309,6 @@
           }
         }
       },
-<<<<<<< HEAD
-      "System.Buffers/4.5.0": {},
-      "System.ComponentModel.Annotations/4.5.0": {},
-=======
       "System.AppContext/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -455,7 +398,6 @@
           "System.Text.Encoding": "4.3.0"
         }
       },
->>>>>>> PaulaSalvado
       "System.Data.SqlClient/4.8.2": {
         "dependencies": {
           "Microsoft.Win32.Registry": "4.7.0",
@@ -483,8 +425,6 @@
           }
         }
       },
-<<<<<<< HEAD
-=======
       "System.Diagnostics.Debug/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -830,17 +770,12 @@
           "System.Runtime": "4.3.0"
         }
       },
->>>>>>> PaulaSalvado
       "System.Security.AccessControl/4.7.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
           "System.Security.Principal.Windows": "4.7.0"
         }
       },
-<<<<<<< HEAD
-      "System.Security.Principal.Windows/4.7.0": {},
-      "System.Text.Encodings.Web/4.5.0": {},
-=======
       "System.Security.Cryptography.Algorithms/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -1074,7 +1009,6 @@
           }
         }
       },
->>>>>>> PaulaSalvado
       "InstaGama.Application/1.0.0": {
         "dependencies": {
           "InstaGama.Domain": "1.0.0"
@@ -1085,13 +1019,9 @@
       },
       "InstaGama.Domain/1.0.0": {
         "dependencies": {
-<<<<<<< HEAD
-          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0"
-=======
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.Extensions.Configuration.Abstractions": "3.1.12",
           "WindowsAzure.Storage": "9.3.3"
->>>>>>> PaulaSalvado
         },
         "runtime": {
           "InstaGama.Domain.dll": {}
@@ -1100,11 +1030,7 @@
       "InstaGama.Repositories/1.0.0": {
         "dependencies": {
           "InstaGama.Domain": "1.0.0",
-<<<<<<< HEAD
-          "Microsoft.Extensions.Configuration.Abstractions": "3.1.11",
-=======
           "Microsoft.Extensions.Configuration.Abstractions": "3.1.12",
->>>>>>> PaulaSalvado
           "System.Data.SqlClient": "4.8.2"
         },
         "runtime": {
@@ -1147,21 +1073,6 @@
       "path": "microsoft.aspnetcore.webutilities/2.2.0",
       "hashPath": "microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512"
     },
-<<<<<<< HEAD
-    "Microsoft.Extensions.Configuration.Abstractions/3.1.11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-vdGEMIhzMGPgeb4WduWqJjgWK+WpkcLwssHJ5zKHQgqAaUdwbaMzMFz8bpOPkRfzwDVPomXmZChUh4fgpuxUjQ==",
-      "path": "microsoft.extensions.configuration.abstractions/3.1.11",
-      "hashPath": "microsoft.extensions.configuration.abstractions.3.1.11.nupkg.sha512"
-    },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-rfIMu8yiK8Z+N6CMlcOCB0Te9Aqj/w7InRDgouqLQqIO6LQB4+YYKumO6XONyMwcO0+FWGc8ZNdhDQIwKTdy4w==",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.11",
-      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.3.1.11.nupkg.sha512"
-=======
     "Microsoft.CSharp/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1182,7 +1093,6 @@
       "sha512": "sha512-rIFeT9vtNl5AKpvWxxhOudNnVRqKNIku1bLVUBc/MdhHeiHA23OOc3TOlniQjSpFRIIjQ9J1LLTYSZvCwOemyg==",
       "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.12",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.3.1.12.nupkg.sha512"
->>>>>>> PaulaSalvado
     },
     "Microsoft.Extensions.ObjectPool/2.2.0": {
       "type": "package",
@@ -1198,21 +1108,12 @@
       "path": "microsoft.extensions.options/2.2.0",
       "hashPath": "microsoft.extensions.options.2.2.0.nupkg.sha512"
     },
-<<<<<<< HEAD
-    "Microsoft.Extensions.Primitives/3.1.11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-r85JK+201Jro6nxSjuBVbFs5FOVygDRV3rHV8pi1E+MSSRgr44FcAdxCrNX3aejBVzAyTkI4Ha8WiZ2BS47dvg==",
-      "path": "microsoft.extensions.primitives/3.1.11",
-      "hashPath": "microsoft.extensions.primitives.3.1.11.nupkg.sha512"
-=======
     "Microsoft.Extensions.Primitives/3.1.12": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-QjEKb7QWbk44/t05BKlYaHP1sX2jOW9MypKVeMikX6932J34AioVo9heppJ8XAUpBLL15iOiyncSLWgHE32xMg==",
       "path": "microsoft.extensions.primitives/3.1.12",
       "hashPath": "microsoft.extensions.primitives.3.1.12.nupkg.sha512"
->>>>>>> PaulaSalvado
     },
     "Microsoft.Net.Http.Headers/2.2.0": {
       "type": "package",
@@ -1228,8 +1129,6 @@
       "path": "microsoft.netcore.platforms/3.1.0",
       "hashPath": "microsoft.netcore.platforms.3.1.0.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
     "Microsoft.NETCore.Targets/1.1.0": {
       "type": "package",
       "serviceable": true,
@@ -1244,7 +1143,6 @@
       "path": "microsoft.win32.primitives/4.3.0",
       "hashPath": "microsoft.win32.primitives.4.3.0.nupkg.sha512"
     },
->>>>>>> PaulaSalvado
     "Microsoft.Win32.Registry/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -1252,8 +1150,6 @@
       "path": "microsoft.win32.registry/4.7.0",
       "hashPath": "microsoft.win32.registry.4.7.0.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
     "NETStandard.Library/1.6.1": {
       "type": "package",
       "serviceable": true,
@@ -1296,7 +1192,6 @@
       "path": "runtime.native.system/4.3.0",
       "hashPath": "runtime.native.system.4.3.0.nupkg.sha512"
     },
->>>>>>> PaulaSalvado
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -1304,8 +1199,6 @@
       "path": "runtime.native.system.data.sqlclient.sni/4.7.0",
       "hashPath": "runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
     "runtime.native.System.IO.Compression/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1390,7 +1283,6 @@
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
     },
->>>>>>> PaulaSalvado
     "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
       "type": "package",
       "serviceable": true,
@@ -1412,8 +1304,6 @@
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
     "System.AppContext/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1421,7 +1311,6 @@
       "path": "system.appcontext/4.3.0",
       "hashPath": "system.appcontext.4.3.0.nupkg.sha512"
     },
->>>>>>> PaulaSalvado
     "System.Buffers/4.5.0": {
       "type": "package",
       "serviceable": true,
@@ -1429,8 +1318,6 @@
       "path": "system.buffers/4.5.0",
       "hashPath": "system.buffers.4.5.0.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
     "System.Collections/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1466,7 +1353,6 @@
       "path": "system.componentmodel/4.3.0",
       "hashPath": "system.componentmodel.4.3.0.nupkg.sha512"
     },
->>>>>>> PaulaSalvado
     "System.ComponentModel.Annotations/4.5.0": {
       "type": "package",
       "serviceable": true,
@@ -1474,8 +1360,6 @@
       "path": "system.componentmodel.annotations/4.5.0",
       "hashPath": "system.componentmodel.annotations.4.5.0.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
     "System.ComponentModel.Primitives/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1497,7 +1381,6 @@
       "path": "system.console/4.3.0",
       "hashPath": "system.console.4.3.0.nupkg.sha512"
     },
->>>>>>> PaulaSalvado
     "System.Data.SqlClient/4.8.2": {
       "type": "package",
       "serviceable": true,
@@ -1505,8 +1388,6 @@
       "path": "system.data.sqlclient/4.8.2",
       "hashPath": "system.data.sqlclient.4.8.2.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
     "System.Diagnostics.Debug/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1752,7 +1633,6 @@
       "path": "system.runtime.serialization.primitives/4.3.0",
       "hashPath": "system.runtime.serialization.primitives.4.3.0.nupkg.sha512"
     },
->>>>>>> PaulaSalvado
     "System.Security.AccessControl/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -1760,8 +1640,6 @@
       "path": "system.security.accesscontrol/4.7.0",
       "hashPath": "system.security.accesscontrol.4.7.0.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
     "System.Security.Cryptography.Algorithms/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1811,7 +1689,6 @@
       "path": "system.security.cryptography.x509certificates/4.3.0",
       "hashPath": "system.security.cryptography.x509certificates.4.3.0.nupkg.sha512"
     },
->>>>>>> PaulaSalvado
     "System.Security.Principal.Windows/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -1819,8 +1696,6 @@
       "path": "system.security.principal.windows/4.7.0",
       "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
     "System.Text.Encoding/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1835,7 +1710,6 @@
       "path": "system.text.encoding.extensions/4.3.0",
       "hashPath": "system.text.encoding.extensions.4.3.0.nupkg.sha512"
     },
->>>>>>> PaulaSalvado
     "System.Text.Encodings.Web/4.5.0": {
       "type": "package",
       "serviceable": true,
@@ -1843,8 +1717,6 @@
       "path": "system.text.encodings.web/4.5.0",
       "hashPath": "system.text.encodings.web.4.5.0.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
     "System.Text.RegularExpressions/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1908,7 +1780,6 @@
       "path": "windowsazure.storage/9.3.3",
       "hashPath": "windowsazure.storage.9.3.3.nupkg.sha512"
     },
->>>>>>> PaulaSalvado
     "InstaGama.Application/1.0.0": {
       "type": "project",
       "serviceable": false,

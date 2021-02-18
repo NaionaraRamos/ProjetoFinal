@@ -1,13 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-<<<<<<< HEAD
-      "C:\\Users\\foes\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\foes\\.nuget\\packages"
-=======
       "C:\\Users\\Paula\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\Paula\\.nuget\\packages"
->>>>>>> PaulaSalvado
     ]
   }
 }

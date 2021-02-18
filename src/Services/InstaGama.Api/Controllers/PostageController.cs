@@ -1,16 +1,8 @@
 ﻿using InstaGama.Application.AppPostage.Input;
 using InstaGama.Application.AppPostage.Interfaces;
 using Microsoft.AspNetCore.Authorization;
-<<<<<<< HEAD
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-=======
-using Microsoft.AspNetCore.Mvc;
-using System;
->>>>>>> PaulaSalvado
 using System.Threading.Tasks;
 
 namespace InstaGama.Api.Controllers

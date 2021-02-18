@@ -103,8 +103,4 @@ namespace InstaGama.Domain.Core
             return true;
         }
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> PaulaSalvado
 }
