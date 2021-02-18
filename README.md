@@ -5,7 +5,7 @@
 ![Rede Social](https://cdn.pixabay.com/photo/2018/11/29/21/51/social-media-3846597_960_720.png)
 
 
-> Desafio do bootcamp da **We Can Code Academy**
+> Desafio do bootcamp da **We Can Code Academy - Gama Academy**
 
 
 ##  📌Desafio:
