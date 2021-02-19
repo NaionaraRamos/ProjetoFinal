@@ -5,7 +5,7 @@
 ![Rede Social](https://cdn.pixabay.com/photo/2018/11/29/21/51/social-media-3846597_960_720.png)
 
 
-> Desafio do bootcamp da **We Can Code Academy - Gama Academy**
+> Desafio do bootcamp da *We Can Code Academy - Gama Academy*
 
 
 ##  📌Desafio:
@@ -28,6 +28,59 @@
 
 ##  📌Instalação
 - ` Git Clone` na sua maquina ;
+
+## 📌 Rotas
+
+*Postman:*
+
+A API está será executada na `porta 53271` quando executada localmente.
+
+Ou
+
+Se utilizar o swagger a API está será executada na `porta 53271`.
+
+### *Login*
+
+|Método|Recurso|Utilização|
+|:------:|:-------:|----------|
+| POST|"/api/Login"|Faz o Login|
+
+### *Upload*
+
+|Método|Recurso|Utilização|
+|:------:|:-------:|----------|
+| POST|"/api/Upload"|Adiciona a URL de uma foto|
+
+### *User*
+
+|Método|Recurso|Utilização|
+|:------:|:-------:|----------|
+| POST|"/api/User"|Adiciona Usuario|
+| GET|"/api/User/{id}"|Visualiza usuarios pelo ID|
+
+
+###  *Postage*
+
+|Método|Recurso|Utilização|
+|:------:|:-------:|----------|
+| POST|"/api/Postage"|Adiciona Postagem|
+| POST|"/api/Postage/{id}/Comments"|Adiciona comentarios|
+| POST|"/api/Postage{id}/Likes"| Dar like|
+|GET|"/api/Postage"|Busca todas as postagens|
+|GET|"/api/Postage/{id}/Comments"|Busca os comentarios pelo ID|
+|GET|"/api/Postage{id}/Likes/Quantitaty"|Busca as quantidades de Likes pelo ID|
+|GET|"/api/Postage{id}/Gallery"|Busca a galeria pelo ID|
+
+### *Relationship*
+
+|Método|Recurso|Utilização|
+|:------:|:-------:|----------|
+| POST|"/api/Relationship/RequestConnection/{idSolicitado}"|Adiciona o relacionamento|
+| GET|"/api/Relationship/GetAllRelationshipRequest"|Visualiza todos os relacionamentos|
+| GET|"/api/Relationship/GetAllAcceptedRequests"|Visualiza os relacionamentos aceitos|
+|GET|"/api/Relationship/GetAllDeclineRequests"|Visualiza os relacionamentos que não foram aceitos|
+|PATCH|"/api/Relationship/AcceptedRequests/{idSolicitante}"|Atualiza|
+|PATCH|"/api/Relationship/DeclineRequests/{idSolicitante}"|Atualiza|
 
 
 ##  📌Contribuindo com o projeto
