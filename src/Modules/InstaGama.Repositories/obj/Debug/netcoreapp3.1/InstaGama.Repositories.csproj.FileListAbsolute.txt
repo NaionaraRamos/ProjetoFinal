@@ -37,3 +37,15 @@ C:\Users\Paula\source\repos\ProjetoFinal\src\Modules\InstaGama.Repositories\obj\
 C:\Users\Paula\source\repos\ProjetoFinal\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.dll
 C:\Users\Paula\source\repos\ProjetoFinal\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.pdb
 >>>>>>> PaulaSalvado
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Repositories\bin\Debug\netcoreapp3.1\InstaGama.Repositories.deps.json
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Repositories\bin\Debug\netcoreapp3.1\InstaGama.Repositories.dll
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Repositories\bin\Debug\netcoreapp3.1\InstaGama.Repositories.pdb
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Repositories\bin\Debug\netcoreapp3.1\InstaGama.Domain.dll
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Repositories\bin\Debug\netcoreapp3.1\InstaGama.Domain.pdb
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.csprojAssemblyReference.cache
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.AssemblyInfoInputs.cache
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.AssemblyInfo.cs
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.csproj.CopyComplete
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.dll
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.pdb

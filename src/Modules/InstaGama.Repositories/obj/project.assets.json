@@ -5814,19 +5814,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Paula\\.nuget\\packages\\": {}
+    "C:\\Users\\rosab\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories\\InstaGama.Repositories.csproj",
+      "projectUniqueName": "C:\\Users\\rosab\\Documents\\GitHub\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories\\InstaGama.Repositories.csproj",
       "projectName": "InstaGama.Repositories",
-      "projectPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories\\InstaGama.Repositories.csproj",
-      "packagesPath": "C:\\Users\\Paula\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories\\obj\\",
+      "projectPath": "C:\\Users\\rosab\\Documents\\GitHub\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories\\InstaGama.Repositories.csproj",
+      "packagesPath": "C:\\Users\\rosab\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rosab\\Documents\\GitHub\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Paula\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rosab\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5840,8 +5840,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj": {
-              "projectPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj"
+            "C:\\Users\\rosab\\Documents\\GitHub\\ProjetoFinal\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj": {
+              "projectPath": "C:\\Users\\rosab\\Documents\\GitHub\\ProjetoFinal\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj"
             }
           }
         }
@@ -5883,13 +5883,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

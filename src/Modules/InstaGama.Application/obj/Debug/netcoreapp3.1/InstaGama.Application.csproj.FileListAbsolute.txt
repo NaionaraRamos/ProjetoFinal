@@ -37,3 +37,15 @@ C:\Users\Paula\source\repos\ProjetoFinal\src\Modules\InstaGama.Application\obj\D
 C:\Users\Paula\source\repos\ProjetoFinal\src\Modules\InstaGama.Application\obj\Debug\netcoreapp3.1\InstaGama.Application.dll
 C:\Users\Paula\source\repos\ProjetoFinal\src\Modules\InstaGama.Application\obj\Debug\netcoreapp3.1\InstaGama.Application.pdb
 >>>>>>> PaulaSalvado
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Application\bin\Debug\netcoreapp3.1\InstaGama.Application.deps.json
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Application\bin\Debug\netcoreapp3.1\InstaGama.Application.dll
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Application\bin\Debug\netcoreapp3.1\InstaGama.Application.pdb
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Application\bin\Debug\netcoreapp3.1\InstaGama.Domain.dll
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Application\bin\Debug\netcoreapp3.1\InstaGama.Domain.pdb
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Application\obj\Debug\netcoreapp3.1\InstaGama.Application.csprojAssemblyReference.cache
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Application\obj\Debug\netcoreapp3.1\InstaGama.Application.AssemblyInfoInputs.cache
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Application\obj\Debug\netcoreapp3.1\InstaGama.Application.AssemblyInfo.cs
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Application\obj\Debug\netcoreapp3.1\InstaGama.Application.csproj.CoreCompileInputs.cache
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Application\obj\Debug\netcoreapp3.1\InstaGama.Application.csproj.CopyComplete
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Application\obj\Debug\netcoreapp3.1\InstaGama.Application.dll
+C:\Users\rosab\Documents\GitHub\ProjetoFinal\src\Modules\InstaGama.Application\obj\Debug\netcoreapp3.1\InstaGama.Application.pdb
