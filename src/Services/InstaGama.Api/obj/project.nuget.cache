@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "RJpxtAhVB1aXXBzteUE9b+FSqf5SbX6GuteJFw8Fm9OYcm/XzLH7PL+LpzO/Kkl6YBU37C4SjCNLrU+GfHaZow==",
+  "dgSpecHash": "QfyeL4Ihnndhv+djyjV4Jb30x0dSP11j3RZQL7+ICwp7rDtVML910WogPDeTuDtYFRmPV4RITXY56YS6ZvBevA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Services\\InstaGama.Api\\InstaGama.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Aline Pereira\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\Aline Pereira\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Aline Pereira\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Aline Pereira\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
@@ -82,6 +83,7 @@
     "C:\\Users\\Aline Pereira\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\Aline Pereira\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.3.0\\system.diagnostics.diagnosticsource.4.3.0.nupkg.sha512",
     "C:\\Users\\Aline Pereira\\.nuget\\packages\\system.diagnostics.tools\\4.3.0\\system.diagnostics.tools.4.3.0.nupkg.sha512",
+    "C:\\Users\\Aline Pereira\\.nuget\\packages\\system.diagnostics.tracesource\\4.3.0\\system.diagnostics.tracesource.4.3.0.nupkg.sha512",
     "C:\\Users\\Aline Pereira\\.nuget\\packages\\system.diagnostics.tracing\\4.3.0\\system.diagnostics.tracing.4.3.0.nupkg.sha512",
     "C:\\Users\\Aline Pereira\\.nuget\\packages\\system.dynamic.runtime\\4.3.0\\system.dynamic.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\Aline Pereira\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",

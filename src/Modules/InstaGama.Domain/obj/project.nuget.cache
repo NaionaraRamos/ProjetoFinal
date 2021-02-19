@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+ypEuAJRa1HIp8NTTU5jRCwGVS8oIXYlbpU0iCyDQSpOOYW7CQMLxiNdtwukOWxmayFPWPlhaGqJcOZQCl88+g==",
+  "dgSpecHash": "mKf8kXJed2eQtPKxcZDGgdmnG2STVyi4V9lwc9r1h386nFoiTp/TNNlXar7la8ixePI1aAuyOQAiIuUZ8+vUHA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Aline Pereira\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\Aline Pereira\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Aline Pereira\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\Aline Pereira\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
@@ -43,6 +44,7 @@
     "C:\\Users\\Aline Pereira\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\Aline Pereira\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.3.0\\system.diagnostics.diagnosticsource.4.3.0.nupkg.sha512",
     "C:\\Users\\Aline Pereira\\.nuget\\packages\\system.diagnostics.tools\\4.3.0\\system.diagnostics.tools.4.3.0.nupkg.sha512",
+    "C:\\Users\\Aline Pereira\\.nuget\\packages\\system.diagnostics.tracesource\\4.3.0\\system.diagnostics.tracesource.4.3.0.nupkg.sha512",
     "C:\\Users\\Aline Pereira\\.nuget\\packages\\system.diagnostics.tracing\\4.3.0\\system.diagnostics.tracing.4.3.0.nupkg.sha512",
     "C:\\Users\\Aline Pereira\\.nuget\\packages\\system.dynamic.runtime\\4.3.0\\system.dynamic.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\Aline Pereira\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",

@@ -2,13 +2,15 @@
 
 
 
-![Rede Social](https://cdn.pixabay.com/photo/2018/11/29/21/51/social-media-3846597_960_720.png)
+<p align="center">
+<img src="./img/instaCademy.jpg" width="50%" height="50%"/>
+</p>
 
 
 > Desafio do bootcamp da *We Can Code Academy - Gama Academy*
 
 
-##  📌Desafio:
+##  📌Desafio
 
 * Cadastro de Usuario,com nome, data de nascimento, genero e foto;
 
