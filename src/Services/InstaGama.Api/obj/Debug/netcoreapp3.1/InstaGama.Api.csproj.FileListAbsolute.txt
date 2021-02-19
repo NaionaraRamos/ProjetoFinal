@@ -157,3 +157,11 @@ C:\Users\Paula\source\repos\ProjetoFinal\src\Services\InstaGama.Api\obj\Debug\ne
 C:\Users\Paula\source\repos\ProjetoFinal\src\Services\InstaGama.Api\obj\Debug\netcoreapp3.1\InstaGama.Api.pdb
 C:\Users\Paula\source\repos\ProjetoFinal\src\Services\InstaGama.Api\obj\Debug\netcoreapp3.1\InstaGama.Api.genruntimeconfig.cache
 >>>>>>> PaulaSalvado
+C:\Users\Aline Pereira\Source\Repos\ProjetoFinal1\src\Services\InstaGama.Api\obj\Debug\netcoreapp3.1\InstaGama.Api.csprojAssemblyReference.cache
+C:\Users\Aline Pereira\Source\Repos\ProjetoFinal1\src\Services\InstaGama.Api\obj\Debug\netcoreapp3.1\InstaGama.Api.AssemblyInfoInputs.cache
+C:\Users\Aline Pereira\Source\Repos\ProjetoFinal1\src\Services\InstaGama.Api\obj\Debug\netcoreapp3.1\InstaGama.Api.AssemblyInfo.cs
+C:\Users\Aline Pereira\Source\Repos\ProjetoFinal1\src\Services\InstaGama.Api\obj\Debug\netcoreapp3.1\InstaGama.Api.csproj.CoreCompileInputs.cache
+C:\Users\Aline Pereira\Source\Repos\ProjetoFinal1\src\Services\InstaGama.Api\obj\Debug\netcoreapp3.1\InstaGama.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Aline Pereira\Source\Repos\ProjetoFinal1\src\Services\InstaGama.Api\obj\Debug\netcoreapp3.1\InstaGama.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Aline Pereira\Source\Repos\ProjetoFinal1\src\Services\InstaGama.Api\obj\Debug\netcoreapp3.1\InstaGama.Api.dll
+C:\Users\Aline Pereira\Source\Repos\ProjetoFinal1\src\Services\InstaGama.Api\obj\Debug\netcoreapp3.1\InstaGama.Api.pdb

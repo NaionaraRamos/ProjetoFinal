@@ -28,3 +28,9 @@ C:\Users\Paula\source\repos\ProjetoFinal\src\Modules\InstaGama.Domain\obj\Debug\
 C:\Users\Paula\source\repos\ProjetoFinal\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGama.Domain.dll
 C:\Users\Paula\source\repos\ProjetoFinal\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGama.Domain.pdb
 >>>>>>> PaulaSalvado
+C:\Users\Aline Pereira\Source\Repos\ProjetoFinal1\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGama.Domain.csprojAssemblyReference.cache
+C:\Users\Aline Pereira\Source\Repos\ProjetoFinal1\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGama.Domain.AssemblyInfoInputs.cache
+C:\Users\Aline Pereira\Source\Repos\ProjetoFinal1\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGama.Domain.AssemblyInfo.cs
+C:\Users\Aline Pereira\Source\Repos\ProjetoFinal1\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGama.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Aline Pereira\Source\Repos\ProjetoFinal1\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGama.Domain.dll
+C:\Users\Aline Pereira\Source\Repos\ProjetoFinal1\src\Modules\InstaGama.Domain\obj\Debug\netcoreapp3.1\InstaGama.Domain.pdb

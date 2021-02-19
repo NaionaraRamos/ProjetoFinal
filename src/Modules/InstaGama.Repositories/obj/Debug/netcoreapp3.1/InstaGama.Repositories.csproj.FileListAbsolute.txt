@@ -37,3 +37,9 @@ C:\Users\Paula\source\repos\ProjetoFinal\src\Modules\InstaGama.Repositories\obj\
 C:\Users\Paula\source\repos\ProjetoFinal\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.dll
 C:\Users\Paula\source\repos\ProjetoFinal\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.pdb
 >>>>>>> PaulaSalvado
+C:\Users\Aline Pereira\Source\Repos\ProjetoFinal1\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.csprojAssemblyReference.cache
+C:\Users\Aline Pereira\Source\Repos\ProjetoFinal1\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.AssemblyInfoInputs.cache
+C:\Users\Aline Pereira\Source\Repos\ProjetoFinal1\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.AssemblyInfo.cs
+C:\Users\Aline Pereira\Source\Repos\ProjetoFinal1\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\Aline Pereira\Source\Repos\ProjetoFinal1\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.dll
+C:\Users\Aline Pereira\Source\Repos\ProjetoFinal1\src\Modules\InstaGama.Repositories\obj\Debug\netcoreapp3.1\InstaGama.Repositories.pdb
