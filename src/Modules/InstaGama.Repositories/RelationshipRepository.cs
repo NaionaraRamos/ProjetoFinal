@@ -22,7 +22,7 @@ namespace InstaGama.Repositories
             _logged = logged;
         }
  
-        public async Task<List<int>> GetAllDeclinedRequests() 
+        /*public async Task<List<int>> GetAllDeclinedRequests() 
         {
             var loggedUser = _logged.GetUserLoggedId();
 
@@ -89,10 +89,12 @@ namespace InstaGama.Repositories
            using (var con = new SqlConnection(_configuration["ConnectionString"]))
            {
 
-               var sqlCmd = $@"SELECT IdSolicitante FROM TesteExtra
-                                  WHERE IdSolicitado = {loggedUser} AND Status = 0";
+                //var sqlCmd = $@"SELECT IdSolicitante,  FROM TesteExtra WHERE IdSolicitado = {loggedUser} AND Status = 0";
+               // var sqlCmd = $@"SELECT * FROM TesteExtra";
 
-               using (var cmd = new SqlCommand(sqlCmd, con))
+                 var sqlCmd = $@"SELECT t.IdSolicitado, t.IdSolicitante, u.Id as IdSolicitado, u.Nome, u.Email FROM TesteExtra t INNER JOIN Usuario u ON u.Id = t.IdSolicitado WHERE t.IdSolicitado = '{loggedUser}'";
+
+                using (var cmd = new SqlCommand(sqlCmd, con))
                {
                    cmd.CommandType = CommandType.Text;
                    con.Open();
@@ -103,15 +105,16 @@ namespace InstaGama.Repositories
                     
                     while (reader.Read())
                     {
-                        var requester = int.Parse(reader["IdSolicitante"].ToString());
+                        var requester = int.Parse(reader["IdSolicitado"].ToString());
+                                      //          reader["IdSolicitante"].ToString());
+                       //ew User(reader["Nome"])
 
                         requests.Add(requester);
                     }
-
                     return requests;
                 }
            }
-        }
+        }*/
 
         public async Task<int> RequestConnection(int idSolicitado)
         {
@@ -151,21 +154,21 @@ namespace InstaGama.Repositories
                      var id = await cmd.ExecuteScalarAsync().ConfigureAwait(false);
 
                      id = idSolicitante;
-                     await ReverseConnection(idSolicitante);
+                     await ReverseConnection(loggedUser, idSolicitante);
 
                      return int.Parse(id.ToString());
                  }
              }
         }
 
-        private async Task<int> ReverseConnection(int idSolicitante)
+        private async Task<int> ReverseConnection(int idSolicitante, int idSolicitado)
         {
-            var loggedUser = _logged.GetUserLoggedId();
+           // var loggedUser = _logged.GetUserLoggedId();
 
             using (var con = new SqlConnection(_configuration["ConnectionString"]))
             {
                 var sqlCmd = $@"INSERT INTO TesteExtra (IdSolicitante, IdSolicitado, Status) VALUES
-                                 ('{idSolicitante}', '{loggedUser}', 1);";
+                                 ('{idSolicitante}', '{idSolicitado}', 1);";
 
                 using (var cmd = new SqlCommand(sqlCmd, con))
                 {
@@ -187,7 +190,50 @@ namespace InstaGama.Repositories
 
             using (var con = new SqlConnection(_configuration["ConnectionString"]))
             {
-                var sqlCmd = $@"UPDATE TesteExtra SET Status = 2 WHERE IdSolicitado = '{loggedUser}' AND IdSolicitante = '{idSolicitante}'";
+                var sqlCmd = $@"DELETE FROM TesteExtra WHERE IdSolicitado = '{loggedUser}' AND IdSolicitante = '{idSolicitante}'";
+
+                using (var cmd = new SqlCommand(sqlCmd, con))
+                {
+                    cmd.CommandType = CommandType.Text;
+                    con.Open();
+
+                    var id = await cmd.ExecuteScalarAsync().ConfigureAwait(false);
+
+                    id = idSolicitante;
+
+                    return int.Parse(id.ToString());
+                }
+            }
+        }
+
+        public async Task<int> DeleteConnection(int idSolicitado)
+        {
+            var loggedUser = _logged.GetUserLoggedId();
+
+            using (var con = new SqlConnection(_configuration["ConnectionString"]))
+            {
+                var sqlCmd = $@"DELETE FROM TesteExtra WHERE IdSolicitado = '{loggedUser}' AND IdSolicitante = '{idSolicitado}' AND Status = 1";
+
+                using (var cmd = new SqlCommand(sqlCmd, con))
+                {
+                    cmd.CommandType = CommandType.Text;
+                    con.Open();
+
+                    var id = await cmd.ExecuteScalarAsync().ConfigureAwait(false);
+
+                    id = idSolicitado;
+                    await ReverseDeleteConnection(idSolicitado, loggedUser);
+
+                    return int.Parse(id.ToString());
+                }
+            }
+        }
+
+        public async Task<int> ReverseDeleteConnection(int idSolicitante, int idSolicitado)
+        {
+            using (var con = new SqlConnection(_configuration["ConnectionString"]))
+            {
+                var sqlCmd = $@"DELETE FROM TesteExtra WHERE IdSolicitado = '{idSolicitado}' AND IdSolicitante = '{idSolicitante}' AND Status = 1";
 
                 using (var cmd = new SqlCommand(sqlCmd, con))
                 {

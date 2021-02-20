@@ -46,7 +46,7 @@ namespace InstaGama.Application.AppPostage
             //Validar os dados obriatorios..
 
             await _likesRepository
-                    .InsertAsync(like)
+                    .InsertAsync(like,userId)
                     .ConfigureAwait(false);
         }
     }

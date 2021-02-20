@@ -55,5 +55,12 @@ namespace InstaGama.Application.AppPostage
 
             return gallery;
         }
+
+        public async Task<List<Postage>> FeedUsuario()
+        {
+            var feed = await _postageRepository.FeedUsuario().ConfigureAwait(false);
+
+            return feed;
+        }
     }
 }

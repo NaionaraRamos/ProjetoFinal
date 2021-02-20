@@ -11,5 +11,7 @@ namespace InstaGama.Application.AppPostage.Interfaces
     {
         Task<Comments> InsertAsync(int postageId, CommentInput input);
         Task<List<Comments>> GetByPostageIdAsync(int postageId);
+       // Task<bool> CheckIfRelationshipIsTrue(int userId);
+       // Task<int> GetUserIdByPostageId(int postagemId);
     }
 }

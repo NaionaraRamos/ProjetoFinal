@@ -1,4 +1,5 @@
-﻿using InstaGama.Domain.Entities;
+﻿using InstaGama.Domain.Core.Interfaces;
+using InstaGama.Domain.Entities;
 using InstaGama.Domain.Interfaces;
 using Microsoft.Extensions.Configuration;
 
@@ -13,10 +14,12 @@ namespace InstaGama.Repositories
     public class PostageRepository : IPostageRepository
     {
         private readonly IConfiguration _configuration;
+        private readonly ILogged _logged;
 
-        public PostageRepository(IConfiguration configuration)
+        public PostageRepository(IConfiguration configuration, ILogged logged)
         {
             _configuration = configuration;
+            _logged = logged;
         }
 
         public async Task<List<Postage>> GetPostageByUserIdAsync(int userId)
@@ -92,12 +95,14 @@ namespace InstaGama.Repositories
         {
             using (var con = new SqlConnection(_configuration["ConnectionString"]))
             {
-                var sqlCmd = @$"SELECT Foto
-                                FROM 
-	                                Postagem
-                                WHERE 
-	                                UsuarioId= '{userId}'
-                                    AND Foto <> ''";
+                 var loggedUser = _logged.GetUserLoggedId();
+
+                 var sqlCmd = @$"IF(EXISTS(SELECT * FROM TesteExtra
+                                           WHERE IdSolicitante = '{loggedUser}'
+                                           AND IdSolicitado = '{userId}' AND Status = 1))
+                                 BEGIN
+                                       SELECT Foto FROM Postagem WHERE UsuarioId= '{userId}' AND Foto <> ''
+                                 END";
 
                 using (var cmd = new SqlCommand(sqlCmd, con))
                 {
@@ -118,6 +123,41 @@ namespace InstaGama.Repositories
                     }
 
                     return GalleryForUser;
+                }
+            }
+        }
+
+        public async Task<List<Postage>> FeedUsuario()
+        {
+            var loggedUSer = _logged.GetUserLoggedId();
+
+            using ( var con = new SqlConnection(_configuration["ConnectionString"]))
+            {
+                var sqlCmd = $@"SELECT P.Texto, P.Foto, P.Video, P.Criacao from Postagem P
+                                INNER JOIN TesteExtra T on T.idSolicitado = P.UsuarioId and T.Status = 1
+                                WHERE t.IdSolicitante = '{loggedUSer}' ORDER BY P.Criacao;";
+
+               // var sqlCmd = @$"SELECT EXISTS(SELECT * FROM TesteExtra WHERE IdSolicitado='{loggedUSer}' AND Status=1);";
+                using (var cmd = new SqlCommand(sqlCmd, con))
+                {
+                    con.Open();
+
+                    var reader = await cmd.ExecuteReaderAsync().ConfigureAwait(false);
+
+                    var feed = new List<Postage>();
+
+                    while (reader.Read())
+                    {
+                        //var post = reader["Texto"].ToString();
+                        var post = new Postage(int.Parse(reader["Id"].ToString()),
+                                               reader["Texto"].ToString(),
+                                               int.Parse(reader["UsuarioId"].ToString()),
+                                               DateTime.Parse(reader["Criacao"].ToString()));
+
+                        feed.Add(post);
+                    }
+
+                    return feed;
                 }
             }
         }

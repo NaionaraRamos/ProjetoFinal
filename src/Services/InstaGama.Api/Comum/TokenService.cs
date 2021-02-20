@@ -23,7 +23,7 @@ namespace InstaGama.Api.Comum
                     new Claim(ClaimTypes.Role, user.Gender.Description),
                     new Claim(JwtRegisteredClaimNames.Jti, user.Id.ToString())
                 }),
-                Expires = DateTime.UtcNow.AddMinutes(1),
+                Expires = DateTime.UtcNow.AddMinutes(10),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
 

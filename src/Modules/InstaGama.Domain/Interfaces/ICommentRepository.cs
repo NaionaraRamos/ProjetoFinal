@@ -8,5 +8,8 @@ namespace InstaGama.Domain.Interfaces
     {
         Task<int> InsertAsync(Comments comment);
         Task<List<Comments>> GetByPostageIdAsync(int postageId);
+
+        Task<bool> CheckIfRelationshipIsTrue(int userId);
+        Task<int> GetUserIdByPostageId(int postagemId);
     }
 }

@@ -54,7 +54,7 @@ namespace InstaGama.Api.Controllers
         }
 
         [Authorize]
-        [HttpPatch]
+        [HttpDelete]
         [Route("DeclineConnection/{idSolicitante}")]
         public async Task<IActionResult> DeclineConnection([FromRoute] int idSolicitante)
         {
@@ -69,45 +69,61 @@ namespace InstaGama.Api.Controllers
             }
         }
 
-        [Authorize]
-        [HttpGet]
-        [Route("GetAllRelationshipRequests")]
-        public async Task<IActionResult> GetAllRelationshipRequests()
-        {
-            var allRequests = await _relationshipService.GetAllRelationshipRequests().ConfigureAwait(false);
+          [Authorize]
+          [HttpDelete]
+          [Route("DeleteConnection/{idSolicitado}")]
+          public async Task<IActionResult> DeleteConnection([FromRoute] int idSolicitado)
+          {
+              try
+              {
+                  var relationship = await _relationshipService.DeleteConnection(idSolicitado).ConfigureAwait(false);
+                  return Ok(relationship);
+              }
+              catch (ArgumentException e)
+              {
+                  return BadRequest(e.Message);
+              }
+          }
 
-            if (allRequests is null)
-                return NoContent();
+        /*   [Authorize]
+           [HttpGet]
+           [Route("GetAllRelationshipRequests")]
+           public async Task<IActionResult> GetAllRelationshipRequests()
+           {
+               var allRequests = await _relationshipService.GetAllRelationshipRequests().ConfigureAwait(false);
 
-            return Ok(allRequests);
-        }
+               if (allRequests is null)
+                   return NoContent();
 
-        [Authorize]
-        [HttpGet]
-        [Route("GetAllAcceptedRequests")]
-        public async Task<IActionResult> GetAllAcceptedRequests()
-        {
-            var acceptedRequests = await _relationshipService.GetAllAcceptedRequests().ConfigureAwait(false);
+               return Ok(allRequests);
+           }
 
-            Console.WriteLine("'Accepted: " + acceptedRequests);
+           [Authorize]
+           [HttpGet]
+           [Route("GetAllAcceptedRequests")]
+           public async Task<IActionResult> GetAllAcceptedRequests()
+           {
+               var acceptedRequests = await _relationshipService.GetAllAcceptedRequests().ConfigureAwait(false);
 
-            if (acceptedRequests is null)
-                return NoContent();
+               Console.WriteLine("'Accepted: " + acceptedRequests);
 
-            return Ok(acceptedRequests);
-        }
+               if (acceptedRequests is null)
+                   return NoContent();
 
-        [Authorize]
-        [HttpGet]
-        [Route("GetAllDeclinedRequests")]
-        public async Task<IActionResult> GetAllDeclinedRequests()
-        {
-            var declinedRequests = await _relationshipService.GetAllDeclinedRequests().ConfigureAwait(false);
+               return Ok(acceptedRequests);
+           }
 
-            if (declinedRequests is null)
-                return NoContent();
+           [Authorize]
+           [HttpGet]
+           [Route("GetAllDeclinedRequests")]
+           public async Task<IActionResult> GetAllDeclinedRequests()
+           {
+               var declinedRequests = await _relationshipService.GetAllDeclinedRequests().ConfigureAwait(false);
 
-            return Ok(declinedRequests);  
-        }
+               if (declinedRequests is null)
+                   return NoContent();
+
+               return Ok(declinedRequests);  
+           }*/
     }
 }

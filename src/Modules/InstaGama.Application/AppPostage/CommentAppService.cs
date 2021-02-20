@@ -33,9 +33,14 @@ namespace InstaGama.Application.AppPostage
         {
             var userId = _logged.GetUserLoggedId();
 
-            var comment = new Comments(postageId, userId, input.Text);
+            _commentRepository.GetByPostageIdAsync(postageId);
+            _commentRepository.CheckIfRelationshipIsTrue();
 
-            //Validar os dados obrigatorios
+            //1 - criar metodo no repositorio para saber pelo id da postagem o usuario da postagem
+            //2 - criar metodo no repositorio para saber se o usuario da postagem é amigo do usuario logado
+            //3 - inserir comentário se as duas anteriores forem verdadeiras.
+
+            var comment = new Comments(postageId, userId, input.Text);
 
             var id = await _commentRepository
                               .InsertAsync(comment)

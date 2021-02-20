@@ -10,8 +10,9 @@ namespace InstaGama.Application.AppPostage.Interfaces
         Task<int> RequestConnection(int idSolicitado);
         Task<int> AcceptConnection(int idSolicitante);
         Task<int> DeclineConnection(int idSolicitante);
-        Task<List<int>> GetAllRelationshipRequests();
+        Task<int> DeleteConnection(int idSolicitado);
+    /*    Task<List<int>> GetAllRelationshipRequests();
         Task<List<int>> GetAllDeclinedRequests();
-        Task<List<int>> GetAllAcceptedRequests();
+        Task<List<int>> GetAllAcceptedRequests();*/
     }
 }

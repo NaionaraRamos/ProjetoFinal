@@ -10,5 +10,6 @@ namespace InstaGama.Application.AppPostage.Interfaces
         Task<Postage> InsertAsync(PostageInput input);
         Task<List<Postage>> GetPostageByUserIdAsync();
         Task<List<string>> GetGalleryByUserIdAsync(int id);
+        Task<List<Postage>> FeedUsuario();
     }
 }

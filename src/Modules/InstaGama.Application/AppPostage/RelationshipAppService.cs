@@ -32,13 +32,19 @@ namespace InstaGama.Application.AppPostage
             return id;
         }
 
+        public async Task<int> DeleteConnection(int idSolicitado)
+        {
+            var id = await _relationshipRepository.DeleteConnection(idSolicitado).ConfigureAwait(false);
+            return id;
+        }
+
         public async Task<int> RequestConnection(int idSolicitado)
         {
             var id = await _relationshipRepository.RequestConnection(idSolicitado).ConfigureAwait(false);
             return id;
         }
 
-        public async Task<List<int>> GetAllDeclinedRequests()
+      /*  public async Task<List<int>> GetAllDeclinedRequests()
         {
             var declinedRequests = await _relationshipRepository.GetAllDeclinedRequests().ConfigureAwait(false);
             return declinedRequests;
@@ -54,6 +60,6 @@ namespace InstaGama.Application.AppPostage
         {
             var allRequests = await _relationshipRepository.GetAllRelationshipRequests().ConfigureAwait(false);
             return allRequests;
-        }
+        }*/
     }
 }

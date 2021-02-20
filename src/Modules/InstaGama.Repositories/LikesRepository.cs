@@ -1,4 +1,5 @@
-﻿using InstaGama.Domain.Entities;
+﻿using InstaGama.Domain.Core.Interfaces;
+using InstaGama.Domain.Entities;
 using InstaGama.Domain.Interfaces;
 using Microsoft.Extensions.Configuration;
 using System.Data;
@@ -10,10 +11,13 @@ namespace InstaGama.Repositories
     public class LikesRepository : ILikesRepository
     {
         private readonly IConfiguration _configuration;
+        private readonly ILogged _logged;
 
-        public LikesRepository(IConfiguration configuration)
+        public LikesRepository(IConfiguration configuration, ILogged logged)
         {
             _configuration = configuration;
+            _logged = logged;
+
         }
 
         public async Task DeleteAsync(int id)
@@ -37,7 +41,7 @@ namespace InstaGama.Repositories
                 }
             }
         }
-
+        
         public async Task<Likes> GetByUserIdAndPostageIdAsync(int userId, int postageId)
         {
             using (var con = new SqlConnection(_configuration["ConnectionString"]))
@@ -105,15 +109,27 @@ namespace InstaGama.Repositories
             }
         }
 
-        public async Task<int> InsertAsync(Likes likes)
+        public async Task<int> InsertAsync(Likes likes, int userId)
         {
             using (var con = new SqlConnection(_configuration["ConnectionString"]))
             {
-                var sqlCmd = @"INSERT INTO
-                                Curtidas (UsuarioId,
+                /* var sqlCmd = @"INSERT INTO
+                                 Curtidas (UsuarioId,
+                                            PostagemId)
+                                 VALUES (@usuarioId,
+                                         @postagemId); SELECT scope_identity();";*/
+                var loggedUser = _logged.GetUserLoggedId();
+
+                var sqlCmd = @$"IF(EXISTS(SELECT * FROM TesteExtra
+                                           WHERE IdSolicitante = '{loggedUser}'
+                                           AND IdSolicitado = @usuarioId AND Status = 1))
+                                 BEGIN
+                                       INSERT INTO
+                                           Curtidas (UsuarioId,
                                            PostagemId)
-                                VALUES (@usuarioId,
-                                        @postagemId); SELECT scope_identity();";
+                                       VALUES (@usuarioId,
+                                           @postagemId); SELECT scope_identity()
+                                 END";
 
                 using (var cmd = new SqlCommand(sqlCmd, con))
                 {
@@ -126,6 +142,8 @@ namespace InstaGama.Repositories
                     var id = await cmd
                                     .ExecuteScalarAsync()
                                     .ConfigureAwait(false);
+
+                    id = userId;
 
                     return int.Parse(id.ToString());
                 }

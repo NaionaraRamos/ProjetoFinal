@@ -148,5 +148,21 @@ namespace InstaGama.Api.Controllers
                 return BadRequest(arg.Message);
             }
         }
+
+        [Authorize]
+        [HttpGet]
+        [Route("Feed")]
+        public async Task<IActionResult> Feed()
+        {
+            try
+            {
+                var feed = await _postageAppService.FeedUsuario().ConfigureAwait(false);
+
+                return Ok(feed);
+            }
+            catch(ArgumentException arg){
+                return BadRequest(arg.Message);
+            }
+        }
     }
 }

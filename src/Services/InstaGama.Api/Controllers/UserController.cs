@@ -19,7 +19,6 @@ namespace InstaGama.Api.Controllers
     {
         private readonly IUserAppService _userAppService;
         private readonly IRelationshipAppService _relationshipService;
-        //  private readonly ILogged _logged;
 
         public UserController(IUserAppService userAppService, IRelationshipAppService relationshipService)
         {
