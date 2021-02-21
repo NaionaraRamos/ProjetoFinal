@@ -32,6 +32,19 @@ namespace InstaGama.Domain.Entities
             Photo = photo;
         }
 
+        public User(string name, string email, DateTime birthday, string foto)
+        {
+            Name = name;
+            Email = email;
+            Birthday = birthday;
+            Photo = foto;
+        }
+
+        public User(string name)
+        {
+            Name = name;
+        }
+
         public int Id { get; private set; }
         public string Email { get; private set; }
         public string Password { get; private set; }

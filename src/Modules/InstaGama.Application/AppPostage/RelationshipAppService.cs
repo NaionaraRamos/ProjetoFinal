@@ -44,22 +44,16 @@ namespace InstaGama.Application.AppPostage
             return id;
         }
 
-      /*  public async Task<List<int>> GetAllDeclinedRequests()
-        {
-            var declinedRequests = await _relationshipRepository.GetAllDeclinedRequests().ConfigureAwait(false);
-            return declinedRequests;
-        }
+        public async Task<List<User>> GetAllAcceptedRequests()
+          {
+              var acceptedRequests = await _relationshipRepository.GetAllAcceptedRequests().ConfigureAwait(false);
+              return acceptedRequests;
+          }
 
-        public async Task<List<int>> GetAllAcceptedRequests()
-        {
-            var acceptedRequests = await _relationshipRepository.GetAllAcceptedRequests().ConfigureAwait(false);
-            return acceptedRequests;
-        }
-
-        public async Task<List<int>> GetAllRelationshipRequests()
+        public async Task<List<User>> GetAllRelationshipRequests()
         {
             var allRequests = await _relationshipRepository.GetAllRelationshipRequests().ConfigureAwait(false);
             return allRequests;
-        }*/
+        }
     }
 }

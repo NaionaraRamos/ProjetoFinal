@@ -30,22 +30,27 @@ namespace InstaGama.Domain.Entities
             Id = id;
         }*/
 
-        public Relationship(int requesterUserId, int requestedUserId, int status)
+        public Relationship(User requesterUserId, User requestedUserId, int status)
         {
             RequesterUserId = requesterUserId;
             RequestedUserId = requestedUserId;
             Status = status;
         }
 
-        public Relationship(int requesterUserId, int requestedUserId)
+        public Relationship(User requesterUserId, User requestedUserId)
         {
             RequesterUserId = requesterUserId;
             RequestedUserId = requestedUserId;
         }
 
-        public int RequesterUserId { get; private set; }
+        public Relationship(User requesterUserId)
+        {
+            RequesterUserId = requesterUserId;
+        }
 
-        public int RequestedUserId { get; private set; }
+        public User RequesterUserId { get; private set; }
+
+        public User RequestedUserId { get; private set; }
 
         public int Status { get; private set; }
     }

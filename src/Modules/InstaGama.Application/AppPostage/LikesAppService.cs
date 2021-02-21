@@ -6,18 +6,20 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 
 namespace InstaGama.Application.AppPostage
 {
     public class LikesAppService : ILikesAppService
     {
         private readonly ILikesRepository _likesRepository;
+        private readonly ICommentRepository _commentRepository;
         private readonly ILogged _logged;
 
-        public LikesAppService(ILikesRepository likesRepository,
-                                ILogged logged)
+        public LikesAppService(ILikesRepository likesRepository, ICommentRepository commentRepository, ILogged logged)
         {
             _likesRepository = likesRepository;
+            _commentRepository = commentRepository;
             _logged = logged;
         }
 
@@ -30,24 +32,36 @@ namespace InstaGama.Application.AppPostage
 
         public async Task InsertAsync(int postageId)
         {
-            var userId = _logged.GetUserLoggedId();
+            var loggedUser = _logged.GetUserLoggedId();
+
+            var userId = await _commentRepository.GetUserIdByPostage(postageId);
+
+            var EhAmigo = await _commentRepository.CheckIfRelationshipIsTrue(userId);
 
             var likesExistForPostage = await _likesRepository
-                                                .GetByUserIdAndPostageIdAsync(userId, postageId)
+                                                .GetByUserIdAndPostageIdAsync(loggedUser, postageId)
                                                 .ConfigureAwait(false);
-            if (likesExistForPostage != null)
-            {
-                await _likesRepository
-                         .DeleteAsync(likesExistForPostage.Id)
-                         .ConfigureAwait(false);
+            if( EhAmigo == true )
+            { 
+                if (likesExistForPostage != null)
+                {
+                    await _likesRepository.DeleteAsync(likesExistForPostage.Id)
+                              .ConfigureAwait(false);
+                }
+
+                var like = new Likes(postageId, loggedUser);
+                await _likesRepository.InsertAsync(like).ConfigureAwait(false);
             }
-
-            var like = new Likes(postageId, userId);
-            //Validar os dados obriatorios..
-
-            await _likesRepository
-                    .InsertAsync(like,userId)
-                    .ConfigureAwait(false);
+            else
+            {
+                //new UnauthorizedAccessException("Apenas amigos podem curtir os posts deste usuário.");
+                Console.WriteLine("Apenas amigos podem curtir os posts deste usuário.");
+            }
         }
+
+       /* private void UnauthorizedAccessException(string v)
+        {
+            throw new UnauthorizedAccessException(v);
+        }*/
     }
 }

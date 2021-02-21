@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using InstaGama.Domain.Entities;
 
 namespace InstaGama.Application.AppPostage.Interfaces
 {
@@ -11,8 +12,7 @@ namespace InstaGama.Application.AppPostage.Interfaces
         Task<int> AcceptConnection(int idSolicitante);
         Task<int> DeclineConnection(int idSolicitante);
         Task<int> DeleteConnection(int idSolicitado);
-    /*    Task<List<int>> GetAllRelationshipRequests();
-        Task<List<int>> GetAllDeclinedRequests();
-        Task<List<int>> GetAllAcceptedRequests();*/
+        Task<List<User>> GetAllRelationshipRequests();
+        Task<List<User>> GetAllAcceptedRequests();
     }
 }

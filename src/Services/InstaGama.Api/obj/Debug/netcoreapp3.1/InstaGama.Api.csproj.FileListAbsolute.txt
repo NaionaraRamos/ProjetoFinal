@@ -102,3 +102,10 @@ C:\Users\55619\Desktop\Tentativa2\src\Services\InstaGama.Api\obj\Debug\netcoreap
 C:\Users\55619\Desktop\Tentativa2\src\Services\InstaGama.Api\obj\Debug\netcoreapp3.1\InstaGama.Api.dll
 C:\Users\55619\Desktop\Tentativa2\src\Services\InstaGama.Api\obj\Debug\netcoreapp3.1\InstaGama.Api.pdb
 C:\Users\55619\Desktop\Tentativa2\src\Services\InstaGama.Api\obj\Debug\netcoreapp3.1\InstaGama.Api.genruntimeconfig.cache
+C:\Users\55619\Desktop\Tentativa2\src\Services\InstaGama.Api\bin\Debug\netcoreapp3.1\System.Web.Mvc.dll
+C:\Users\55619\Desktop\Tentativa2\src\Services\InstaGama.Api\bin\Debug\netcoreapp3.1\System.Web.Razor.dll
+C:\Users\55619\Desktop\Tentativa2\src\Services\InstaGama.Api\bin\Debug\netcoreapp3.1\System.Web.Helpers.dll
+C:\Users\55619\Desktop\Tentativa2\src\Services\InstaGama.Api\bin\Debug\netcoreapp3.1\System.Web.WebPages.Deployment.dll
+C:\Users\55619\Desktop\Tentativa2\src\Services\InstaGama.Api\bin\Debug\netcoreapp3.1\System.Web.WebPages.Razor.dll
+C:\Users\55619\Desktop\Tentativa2\src\Services\InstaGama.Api\bin\Debug\netcoreapp3.1\System.Web.WebPages.dll
+C:\Users\55619\Desktop\Tentativa2\src\Services\InstaGama.Api\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll

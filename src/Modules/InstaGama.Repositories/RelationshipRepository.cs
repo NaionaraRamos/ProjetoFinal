@@ -21,7 +21,7 @@ namespace InstaGama.Repositories
             _configuration = configuration;
             _logged = logged;
         }
- 
+
         /*public async Task<List<int>> GetAllDeclinedRequests() 
         {
             var loggedUser = _logged.GetUserLoggedId();
@@ -50,17 +50,27 @@ namespace InstaGama.Repositories
                     return requests;
                 }
             }
-        }
- 
-        public async Task<List<int>> GetAllAcceptedRequests()
+        }*/
+
+        public async Task<List<User>> GetAllAcceptedRequests()
         {
             var loggedUser = _logged.GetUserLoggedId();
 
             using (var con = new SqlConnection(_configuration["ConnectionString"]))
             {
 
-                var sqlCmd = $@"SELECT IdSolicitante FROM TesteExtra
-                                  WHERE IdSolicitado = {loggedUser} AND Status = 1";
+                var sqlCmd = $@"SELECT t.IdSolicitante,
+                                        t.Status,
+                                        u.Id as IdSolicitado,
+                                        u.Nome,
+                                        u.Email,
+                                        u.DataNascimento,
+                                        u.GeneroId,
+                                        u.Foto
+                                  FROM TesteExtra t
+                                  INNER JOIN
+                                        Usuario u ON u.Id = t.IdSolicitante
+                                  WHERE t.IdSolicitado = '{loggedUser}' AND t.Status = 0";
 
                 using (var cmd = new SqlCommand(sqlCmd, con))
                 {
@@ -69,52 +79,66 @@ namespace InstaGama.Repositories
 
                     var reader = await cmd.ExecuteReaderAsync().ConfigureAwait(false);
 
-                    var requests = new List<int>();
+                    var requests = new List<User>();
 
                     while (reader.Read())
                     {
-                        var requester = int.Parse(reader["IdSolicitante"].ToString());
+                        var user = new User(reader["Nome"].ToString(),
+                                                  reader["Email"].ToString(),
+                                                  DateTime.Parse(reader["DataNascimento"].ToString()),
+                                                  reader["Foto"].ToString());
 
-                        requests.Add(requester);
+                        user.SetId(int.Parse(reader["IdSolicitante"].ToString()));
+                        requests.Add(user);
                     }
                     return requests;
                 }
             }
         }
 
-        public async Task<List<int>> GetAllRelationshipRequests()
+        public async Task<List<User>> GetAllRelationshipRequests()
         {
            var loggedUser = _logged.GetUserLoggedId();
 
            using (var con = new SqlConnection(_configuration["ConnectionString"]))
            {
-
-                //var sqlCmd = $@"SELECT IdSolicitante,  FROM TesteExtra WHERE IdSolicitado = {loggedUser} AND Status = 0";
-               // var sqlCmd = $@"SELECT * FROM TesteExtra";
-
-                 var sqlCmd = $@"SELECT t.IdSolicitado, t.IdSolicitante, u.Id as IdSolicitado, u.Nome, u.Email FROM TesteExtra t INNER JOIN Usuario u ON u.Id = t.IdSolicitado WHERE t.IdSolicitado = '{loggedUser}'";
+                 var sqlCmd = $@"SELECT t.IdSolicitante,
+                                        t.Status,
+                                        u.Id as IdSolicitado,
+                                        u.Nome,
+                                        u.Email,
+                                        u.DataNascimento,
+                                        u.GeneroId,
+                                        u.Foto
+                                  FROM TesteExtra t
+                                  INNER JOIN
+                                        Usuario u ON u.Id = t.IdSolicitante
+                                  WHERE t.IdSolicitado = '{loggedUser}' AND t.Status = 0";
 
                 using (var cmd = new SqlCommand(sqlCmd, con))
-               {
+                {
                    cmd.CommandType = CommandType.Text;
                    con.Open();
 
                     var reader = await cmd.ExecuteReaderAsync().ConfigureAwait(false);
 
-                    var requests = new List<int>();
+                    var requests = new List<User>();
                     
                     while (reader.Read())
                     {
-                        var requester = int.Parse(reader["IdSolicitado"].ToString());
-                                      //          reader["IdSolicitante"].ToString());
-                       //ew User(reader["Nome"])
 
-                        requests.Add(requester);
+                        var user = new User(reader["Nome"].ToString(),
+                                                  reader["Email"].ToString(),
+                                                  DateTime.Parse(reader["DataNascimento"].ToString()),
+                                                  reader["Foto"].ToString());
+
+                        user.SetId(int.Parse(reader["IdSolicitante"].ToString()));
+                        requests.Add(user);
                     }
                     return requests;
                 }
            }
-        }*/
+        }
 
         public async Task<int> RequestConnection(int idSolicitado)
         {
@@ -158,14 +182,12 @@ namespace InstaGama.Repositories
 
                      return int.Parse(id.ToString());
                  }
-             }
+             } 
         }
 
         private async Task<int> ReverseConnection(int idSolicitante, int idSolicitado)
         {
-           // var loggedUser = _logged.GetUserLoggedId();
-
-            using (var con = new SqlConnection(_configuration["ConnectionString"]))
+            using (var con = new SqlConnection(_configuration[ "ConnectionString"]))
             {
                 var sqlCmd = $@"INSERT INTO TesteExtra (IdSolicitante, IdSolicitado, Status) VALUES
                                  ('{idSolicitante}', '{idSolicitado}', 1);";
@@ -190,7 +212,7 @@ namespace InstaGama.Repositories
 
             using (var con = new SqlConnection(_configuration["ConnectionString"]))
             {
-                var sqlCmd = $@"DELETE FROM TesteExtra WHERE IdSolicitado = '{loggedUser}' AND IdSolicitante = '{idSolicitante}'";
+                var sqlCmd = $@"DELETE FROM TesteExtra WHERE IdSolicitado = '{loggedUser}' AND IdSolicitante = '{idSolicitante}' AND Status = 0";
 
                 using (var cmd = new SqlCommand(sqlCmd, con))
                 {

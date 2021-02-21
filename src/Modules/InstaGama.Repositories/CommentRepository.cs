@@ -67,7 +67,7 @@ namespace InstaGama.Repositories
             }
         }
 
-        public async Task<bool> CheckIfRelationshipIsTrue(int userId)
+        public async Task<bool> CheckIfRelationshipIsTrue(int usuarioId)
         {
             var loggedUser = _logged.GetUserLoggedId();
 
@@ -75,7 +75,7 @@ namespace InstaGama.Repositories
 
             using (var con = new SqlConnection(_configuration["ConnectionString"]))
             {
-                var sqlCmd = $@"SELECT COUNT(*) AS Contagem FROM TesteExtra WHERE IdSolicitado = {userId}, IdSolicitante = {loggedUser} AND Status = 1"; 
+                var sqlCmd = $@"SELECT COUNT(*) AS Contagem FROM TesteExtra WHERE IdSolicitado = {usuarioId} AND IdSolicitante = {loggedUser} AND Status = 1;"; 
 
                 using (var cmd = new SqlCommand(sqlCmd, con))
                 {
@@ -86,23 +86,25 @@ namespace InstaGama.Repositories
                                         .ExecuteReaderAsync()
                                         .ConfigureAwait(false);
 
-                    var relationshipExists = int.Parse(reader["Contagem"].ToString());
-
-                    if(relationshipExists == 1)
+                    while (reader.Read())
                     {
-                        EhAmigo = true;
-                    }
+                        var relationshipExists = int.Parse(reader["Contagem"].ToString());
 
+                        if (relationshipExists == 1)
+                        {
+                            EhAmigo = true;
+                        }
+                    }
                     return EhAmigo;
                 }
             }
         }
 
-        public async Task<int> GetUserIdByPostageId(int postagemId)
+        public async Task<int> GetUserIdByPostage(int postagemId)
         {
             using (var con = new SqlConnection(_configuration["ConnectionString"]))
             {
-                var sqlCmd = $@"SELECT UsuarioId FROM Postagem WHERE PostagemId = {postagemId}";
+                var sqlCmd = $@"SELECT UsuarioId FROM Postagem WHERE Id = {postagemId}";
 
                 using (var cmd = new SqlCommand(sqlCmd, con))
                 {
@@ -129,7 +131,7 @@ namespace InstaGama.Repositories
 
             using (var con = new SqlConnection(_configuration["ConnectionString"]))
             {
-                var sqlCmd = @$"IF(EXISTS(SELECT * FROM TesteExtra
+               /* var sqlCmd = @$"IF(EXISTS(SELECT * FROM TesteExtra
                                            WHERE IdSolicitante = '{loggedUser}'
                                            AND IdSolicitado = @usuarioId AND Status = 1))
                                  BEGIN
@@ -142,8 +144,8 @@ namespace InstaGama.Repositories
                                         @postagemId,
                                         @texto,
                                         @criacao)
-                                 END";
-                /*var sqlCmd = @"INSERT INTO
+                                 END";*/
+                var sqlCmd = @"INSERT INTO
                                 Comentario (UsuarioId,
                                              PostagemId,
                                              Texto,
@@ -151,7 +153,7 @@ namespace InstaGama.Repositories
                                 VALUES (@usuarioId,
                                         @postagemId,
                                         @texto,
-                                        @criacao); SELECT scope_identity();";*/
+                                        @criacao); SELECT scope_identity();";
 
                 using (var cmd = new SqlCommand(sqlCmd, con))
                 {

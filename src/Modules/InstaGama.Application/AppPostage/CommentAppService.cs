@@ -29,26 +29,30 @@ namespace InstaGama.Application.AppPostage
             return comments;
         }
 
-        public async Task<Comments> InsertAsync(int postageId, CommentInput input)
+        public async Task<object> InsertAsync(int postageId, CommentInput input)
         {
-            var userId = _logged.GetUserLoggedId();
+            var loggedUser = _logged.GetUserLoggedId();
 
-            _commentRepository.GetByPostageIdAsync(postageId);
-            _commentRepository.CheckIfRelationshipIsTrue();
+            var userId = await _commentRepository.GetUserIdByPostage(postageId);
 
-            //1 - criar metodo no repositorio para saber pelo id da postagem o usuario da postagem
-            //2 - criar metodo no repositorio para saber se o usuario da postagem é amigo do usuario logado
-            //3 - inserir comentário se as duas anteriores forem verdadeiras.
+            var EhAmigo = await _commentRepository.CheckIfRelationshipIsTrue(userId);
 
-            var comment = new Comments(postageId, userId, input.Text);
+            if(EhAmigo == true)
+            {
+                var comment = new Comments(postageId, userId, input.Text);
 
-            var id = await _commentRepository
-                              .InsertAsync(comment)
-                              .ConfigureAwait(false);
+                var id = await _commentRepository
+                                  .InsertAsync(comment)
+                                  .ConfigureAwait(false);
 
-            comment.SetId(id);
+                comment.SetId(id);
 
-            return comment;
+                return comment;
+            }
+            else
+            {
+                return "Apenas amigos deste usuário podem comentar seus posts.";
+            }
         }
     }
 }

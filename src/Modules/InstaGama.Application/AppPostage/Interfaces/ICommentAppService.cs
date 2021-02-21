@@ -9,7 +9,7 @@ namespace InstaGama.Application.AppPostage.Interfaces
 {
     public interface ICommentAppService
     {
-        Task<Comments> InsertAsync(int postageId, CommentInput input);
+        Task<object> InsertAsync(int postageId, CommentInput input);
         Task<List<Comments>> GetByPostageIdAsync(int postageId);
        // Task<bool> CheckIfRelationshipIsTrue(int userId);
        // Task<int> GetUserIdByPostageId(int postagemId);

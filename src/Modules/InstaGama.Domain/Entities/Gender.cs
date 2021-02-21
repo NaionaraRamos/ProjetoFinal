@@ -7,8 +7,7 @@
             Description = description;
         }
 
-        public Gender(int id,
-                        string description)
+        public Gender(int id, string description)
         {
             Id = id;
             Description = description;

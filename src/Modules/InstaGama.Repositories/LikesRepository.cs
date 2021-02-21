@@ -109,18 +109,20 @@ namespace InstaGama.Repositories
             }
         }
 
-        public async Task<int> InsertAsync(Likes likes, int userId)
+        public async Task<int> InsertAsync(Likes likes
+            //, int userId
+            )
         {
             using (var con = new SqlConnection(_configuration["ConnectionString"]))
             {
-                /* var sqlCmd = @"INSERT INTO
+                var sqlCmd = @"INSERT INTO
                                  Curtidas (UsuarioId,
                                             PostagemId)
                                  VALUES (@usuarioId,
-                                         @postagemId); SELECT scope_identity();";*/
-                var loggedUser = _logged.GetUserLoggedId();
+                                         @postagemId); SELECT scope_identity();";
+                //var loggedUser = _logged.GetUserLoggedId();
 
-                var sqlCmd = @$"IF(EXISTS(SELECT * FROM TesteExtra
+               /* var sqlCmd = @$"IF(EXISTS(SELECT * FROM TesteExtra
                                            WHERE IdSolicitante = '{loggedUser}'
                                            AND IdSolicitado = @usuarioId AND Status = 1))
                                  BEGIN
@@ -129,7 +131,7 @@ namespace InstaGama.Repositories
                                            PostagemId)
                                        VALUES (@usuarioId,
                                            @postagemId); SELECT scope_identity()
-                                 END";
+                                 END";*/
 
                 using (var cmd = new SqlCommand(sqlCmd, con))
                 {
@@ -143,7 +145,7 @@ namespace InstaGama.Repositories
                                     .ExecuteScalarAsync()
                                     .ConfigureAwait(false);
 
-                    id = userId;
+                   // id = userId;
 
                     return int.Parse(id.ToString());
                 }
