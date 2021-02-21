@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories.IoC\\InstaGama.Repositories.IoC.csproj": {}
+    "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Repositories.IoC\\InstaGama.Repositories.IoC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Application\\InstaGama.Application.csproj": {
+    "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Application\\InstaGama.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Application\\InstaGama.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Application\\InstaGama.Application.csproj",
         "projectName": "InstaGama.Application",
-        "projectPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Application\\InstaGama.Application.csproj",
-        "packagesPath": "C:\\Users\\Paula\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Application\\obj\\",
+        "projectPath": "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Application\\InstaGama.Application.csproj",
+        "packagesPath": "C:\\Users\\Aline Pereira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Paula\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aline Pereira\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj": {
-                "projectPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj"
+              "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj": {
+                "projectPath": "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj"
               }
             }
           }
@@ -58,21 +58,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj": {
+    "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj",
         "projectName": "InstaGama.Domain",
-        "projectPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj",
-        "packagesPath": "C:\\Users\\Paula\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj",
+        "packagesPath": "C:\\Users\\Aline Pereira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Paula\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aline Pereira\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -98,6 +98,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Castle.Core": {
+              "target": "Package",
+              "version": "[4.4.1, )"
+            },
             "Microsoft.AspNetCore.Http.Abstractions": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -126,21 +130,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories.IoC\\InstaGama.Repositories.IoC.csproj": {
+    "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Repositories.IoC\\InstaGama.Repositories.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories.IoC\\InstaGama.Repositories.IoC.csproj",
+        "projectUniqueName": "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Repositories.IoC\\InstaGama.Repositories.IoC.csproj",
         "projectName": "InstaGama.Repositories.IoC",
-        "projectPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories.IoC\\InstaGama.Repositories.IoC.csproj",
-        "packagesPath": "C:\\Users\\Paula\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories.IoC\\obj\\",
+        "projectPath": "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Repositories.IoC\\InstaGama.Repositories.IoC.csproj",
+        "packagesPath": "C:\\Users\\Aline Pereira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Repositories.IoC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Paula\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aline Pereira\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -154,14 +158,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Application\\InstaGama.Application.csproj": {
-                "projectPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Application\\InstaGama.Application.csproj"
+              "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Application\\InstaGama.Application.csproj": {
+                "projectPath": "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Application\\InstaGama.Application.csproj"
               },
-              "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj": {
-                "projectPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj"
+              "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj": {
+                "projectPath": "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj"
               },
-              "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories\\InstaGama.Repositories.csproj": {
-                "projectPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories\\InstaGama.Repositories.csproj"
+              "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Repositories\\InstaGama.Repositories.csproj": {
+                "projectPath": "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Repositories\\InstaGama.Repositories.csproj"
               }
             }
           }
@@ -200,21 +204,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories\\InstaGama.Repositories.csproj": {
+    "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Repositories\\InstaGama.Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories\\InstaGama.Repositories.csproj",
+        "projectUniqueName": "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Repositories\\InstaGama.Repositories.csproj",
         "projectName": "InstaGama.Repositories",
-        "projectPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories\\InstaGama.Repositories.csproj",
-        "packagesPath": "C:\\Users\\Paula\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Repositories\\obj\\",
+        "projectPath": "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Repositories\\InstaGama.Repositories.csproj",
+        "packagesPath": "C:\\Users\\Aline Pereira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Paula\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aline Pereira\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -228,8 +232,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj": {
-                "projectPath": "C:\\Users\\Paula\\Source\\Repos\\ProjetoFinal\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj"
+              "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj": {
+                "projectPath": "C:\\Users\\Aline Pereira\\Source\\Repos\\ProjetoFinal1\\src\\Modules\\InstaGama.Domain\\InstaGama.Domain.csproj"
               }
             }
           }
@@ -268,7 +272,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
