@@ -3,7 +3,7 @@
 
 
 <p align="center">
-<img src="img/instaCademy.jpg" width="50%" height="50%"/>
+<img src="./img/instaCademy.jpg" width="50%" height="50%"/>
 </p>
 
 
